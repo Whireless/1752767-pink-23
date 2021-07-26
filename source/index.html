@@ -9,35 +9,35 @@
     <header class="main-header">
     <div class="container">
       <nav class="main-nav">
-        <img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов">
+        <a href="#"><img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов"></a>
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
       </nav>
       <h1 class="main-header__head-text">Взгляните на жизнь иначе!</h1>
       <div class="main-header__image-hand"></div>
-      <a class="main-header__button-download" href="#">Скачать приложение</a>
+      <a class="main-header__button-download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
       <ul class="main-header__platform-list">
-        <li class="main-header__platform-item--ios"></li>
-        <li class="main-header__platform-item--android"></li>
-        <li class="main-header__platform-item--windows-phone"></li>
+        <li class="main-header__platform-item main-header__platform-item--ios"><a href="https://www.apple.com/ru/app-store/"></a></li>
+        <li class="main-header__platform-item main-header__platform-item--android"><a href="https://play.google.com/store?hl=ru&gl=US"></a></li>
+        <li class="main-header__platform-item main-header__platform-item--windows-phone"><a href="https://www.microsoft.com/ru-RU/store/apps"></a></li>
       </ul>
       <p class="main-header__platform-info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
     </header>
     <main class="main-content">
-      <div class="container">
-      <section class="intro-info">
+    <div class="container">
+      <div class="intro-info">
         <p class="intro-info__intro-text">Устали от серости мегаполиса?<br>Нам есть, что вампредложить!</p>
-      </section>
+      </div>
       <section class="advantages">
-        <div class="advantages__block-info--mood">
+        <div class="advantages__block-info advantages__block-info--mood">
           <h3>Поднимает настроение</h3>
           <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
-        <div class="advantages__block-info--world">
+        <div class="advantages__block-info advantages__block-info--world">
           <h3>Меняет мир вокруг</h3>
           <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
-        <div class="advantages__block-info--friends">
+        <div class="advantages__block-info advantages__block-info--friends">
           <h3>Заводит новых друзей</h3>
           <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
@@ -58,23 +58,33 @@
         <table class="price-table">
           <thead class="price-table__header">
             <tr>
+              <th>База</th>
               <th>Стандарт</th>
+              <th>Анлим</th>
             </tr>
             <tr>
+              <td>1,99 USD</td>
               <td>3,99 USD</td>
+              <td>9,99 USD</td>
             </tr>
           </thead>
           <tbody class="price-table__body">
           <tr>
             <td>Розовый фильтр</td>
             <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>Смайлики</td>
             <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>Комментарии</td>
+            <td></td>
+            <td></td>
             <td></td>
           </tr>
          </tbody>
@@ -87,15 +97,15 @@
       </section>
       <section class="about">
         <p class="about__about-info">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <div class="about__about--phone">
+        <div class="about__contact-block about__contact-block--phone">
           <h4>Звоните:</h4>
           <p><a href="tel:+78125556666" aria-label="Позвонить нам:">+7 (812) 555-66-66</a></p>
         </div>
-        <div class="about__about--email">
+        <div class="about__contact-block about__contact-block--email">
           <h4>Пишите:</h4>
           <p><a href="mailto:mail@htmlacademy.ru" aria-label="Написать нам:">mail@htmlacademy.ru</a></p>
         </div>
-        <div class="about__about--adress">
+        <div class="about__contact-block about__contact-block--adress">
           <h4>Приезжайте в гости:</h4>
           <p><a href="#" aria-label="Наш адрес:">ул. Большая Конюшенная, 19/8</a></p>
         </div>
@@ -103,18 +113,21 @@
       <section class="map">
         <img src="img/mobile/map.png" width="320" height="200" alt="Наш адрес: ул. Большая Конюшенная, 19/8">
       </section>
-      </div>
+    </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <div class="main-footer__footer-logo"></div>
+    <div class="container">
+        <a class="main-footer__footer-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
         <ul class="main-footer__social-list">
-          <li class="main-footer__social-item--twitter"><a href="#"></a></li>
-          <li class="main-footer__social-item--facebook"><a href="#"></a></li>
-          <li class="main-footer__social-item--youtube"><a href="#"></a></li>
+          <li class="main-footer__social-item main-footer__social-item--twitter"><a href="#"></a></li>
+          <li class="main-footer__social-item main-footer__social-item--facebook"><a href="#"></a></li>
+          <li class="main-footer__social-item main-footer__social-item--youtube"><a href="#"></a></li>
         </ul>
-        <p class="main-footer__who-develop">Разработано</p>
-      </div>
+        <div class="main-footer__who-develop">
+          <p>Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </div>
+    </div>
     </footer>
   </body>
 </html>
