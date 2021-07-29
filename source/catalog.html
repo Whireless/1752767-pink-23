@@ -28,7 +28,7 @@
         <p class="users-photo__preview-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="users-photo__post">
           <img src="" width="320" height="137" alt="Прежде чем забраться сюда, я помолилась раз 10 :D">
-          <h4>Анна</h4>
+          <h3>Анна</h3>
           <p>Прыгать или нет? Напишите в
             комментарии свой совет и
             смотрите прямую трансляцию в
@@ -40,7 +40,7 @@
         </div>
         <div class="users-photo__post">
           <img src="" width="280" height="180" alt="По заветам усатого ведущего с 1го канала: АААААвтомобиль!">
-          <h4>Левон</h4>
+          <h3>Левон</h3>
           <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
@@ -49,7 +49,7 @@
         </div>
         <div class="users-photo__post">
           <img src="" width="280" height="180" alt="На самом деле - вообще не обрадуются">
-          <h4>Антон</h4>
+          <h3>Антон</h3>
           <p>Соседи будут рады!</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
@@ -58,7 +58,7 @@
         </div>
         <div class="users-photo__post">
           <img src="" width="280" height="180" alt="Дилема тысячилетия - облака или панорамные окна?">
-          <h4>Борис</h4>
+          <h3>Борис</h3>
           <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
@@ -67,7 +67,7 @@
         </div>
         <div class="users-photo__post">
           <img src="" width="280" height="180" alt="Ну Краснодарский край как всегда">
-          <h4>Сергей</h4>
+          <h3>Сергей</h3>
           <p>Самая кубанская в мире!</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
@@ -76,7 +76,7 @@
         </div>
         <div class="users-photo__post">
           <img src="" width="280" height="180" alt="Сколько тонн снега ради фотки не раскидаешь?">
-          <h4>Максим</h4>
+          <h3>Максим</h3>
           <p>Где снег-то?</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
@@ -85,7 +85,7 @@
         </div>
         <div class="users-photo__post">
           <img src="" width="280" height="180" alt="Лечу снаружи самолёта и думаю о том, как же хорошо наверное лететь внутри">
-          <h4>Надежда</h4>
+          <h3>Надежда</h3>
           <p>Всем GM и взаимные лайки!</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
@@ -95,12 +95,29 @@
       </section>
       <section class="zone-download">
         <h2>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-        <form class="zone-download__form" action="https://echo.htmlacademy.ru/" method="GET">
-          <img src="" width="280" height="374" alt="Тут не плохая зимняя погодка, если что.">
-          <button class="zone-download__button-one" type="button"></button>
-          <button class="zone-download__button-two" type="button"></button>
-          <button class="zone-download__button-three" type="button"></button>
-          <input type="range">
+        <form class="zone-download__form" action="https://echo.htmlacademy.ru/" method="POST">
+          <input class="visually-hidden" type="file" name="user-photo" id="user-photo-zone">
+          <label for="user-photo-zone">
+          <div class="zone-download__example-photo"></div>
+          </label>
+          <button class="zone-download__button zone-download__button--crop" type="button"></button>
+          <button class="zone-download__button zone-download__button--fill" type="button"></button>
+          <button class="zone-download__button zone-download__button--contrast" type="button"></button>
+          <div class="zone-download__range-zone">
+            <div class="zone-download__strip">
+              <button type="button"></button>
+            </div>
+          </div>
+          <div class="zone-download__range-zone">
+            <div class="zone-download__strip">
+              <button type="button"></button>
+            </div>
+          </div>
+          <div class="zone-download__range-zone">
+            <div class="zone-download__strip">
+              <button type="button"></button>
+            </div>
+          </div>
           <button class="zone-download__button-post" type="submit">Запостить</button>
           <button class="zone-download__button-cancel" type="reset">Отмена</button>
         </form>
