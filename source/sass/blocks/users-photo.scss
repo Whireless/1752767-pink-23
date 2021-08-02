@@ -1,0 +1,36 @@
+.users-photo__preview-text {
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 60px;
+}
+
+.users-photo__post {
+  background-color: $bgColor;
+}
+
+.users-photo__text-zone {
+  padding-left: 17px;
+  padding-bottom: 26px;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  time {
+    text-transform: uppercase;
+  }
+}
+
+.users-photo__like-zone {
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    color: $linkColor;
+  }
+}

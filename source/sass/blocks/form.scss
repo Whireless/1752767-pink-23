@@ -1,0 +1,58 @@
+.form {
+  h2 {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+}
+
+.form__personal,
+.form__achievements,
+.form__contacts,
+.form__devices,
+.form__emotions {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__personal {
+  label {
+    color: $linkColor;
+  }
+}
+
+.form__contacts {
+  label {
+    color: $linkColor;
+  }
+}
+
+.form__achievements {
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+}
+
+.form__devices {
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+}
+
+.form__emotions {
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+}
+
+.form__textzone {
+  resize: none;
+  height: 197px;
+}

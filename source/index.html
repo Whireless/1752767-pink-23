@@ -2,15 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Пинк</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-    <div class="container">
       <nav class="main-nav">
+      <div class="main-nav__nav-head">
+      <div class="container">
         <a href="#"><img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов"></a>
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
+      </div>
+      </div>
         <ul class="main-nav__nav-list">
           <li class="main-nav__nav-item"><a href="#">Главная</a></li>
           <li class="main-nav__nav-item"><a href="catalog.html">Фотографии</a></li>
@@ -19,22 +25,29 @@
         </ul>
       </nav>
       <h1 class="main-header__head-text">Взгляните на жизнь иначе!</h1>
-      <div class="main-header__image-hand"></div>
+      <div class="main-header__image-hand">
+        <div class="main-header__image-pink"></div>
+      </div>
+      <div class="main-header__platform-block">
+      <div class="container">
       <a class="main-header__button-download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
       <ul class="main-header__platform-list">
         <li class="main-header__platform-item main-header__platform-item--ios"><a href="https://www.apple.com/ru/app-store/" aria-label="Скачать приложение для iOS"></a></li>
         <li class="main-header__platform-item main-header__platform-item--android"><a href="https://play.google.com/store?hl=ru&gl=US" aria-label="Скачать приложение для Android"></a></li>
         <li class="main-header__platform-item main-header__platform-item--windows-phone"><a href="https://www.microsoft.com/ru-RU/store/apps" aria-label="Скачать приложение для Windows Phone, да, мы даже его обновляем"></a></li>
       </ul>
-      <p class="main-header__platform-info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div>
+      <p class="main-header__platform-info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </div>
+      </div>
     </header>
     <main class="main-content">
     <div class="container">
       <div class="intro-info">
-        <p class="intro-info__intro-text">Устали от серости мегаполиса?<br>Нам есть, что вампредложить!</p>
+        <p class="intro-info__intro-text">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
       </div>
+    </div>
       <section class="advantages">
+      <div class="container">
         <h2 class="visually-hidden">Преимущества нашего приложения</h2>
         <div class="advantages__block-info advantages__block-info--mood">
           <h3>Поднимает настроение</h3>
@@ -49,8 +62,10 @@
           <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
         <div class="advantages__image-advantages"></div>
+      </div>
       </section>
       <section class="reviews slider">
+      <div class="container">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__slider-block">
           <h3>Николай Петров</h3>
@@ -61,8 +76,10 @@
           <li class="reviews__slider-item"><button aria-label="Второй слайд"></button></li>
           <li class="reviews__slider-item"><button aria-label="Третий слайд"></button></li>
         </ul>
+      </div>
       </section>
       <section class="price slider">
+      <div class="container">
         <h2 class="visually-hidden">Таблица с тарифами</h2>
         <table class="price-table">
           <thead class="price-table__header">
@@ -103,8 +120,10 @@
           <li class="price__slider-item"><button aria-label="Второй слайд"></button></li>
           <li class="price__slider-item"><button aria-label="Третий слайд"></button></li>
         </ul>
+      </div>
       </section>
       <section class="about">
+      <div class="container">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="about__about-info">Остались вопросы?<br>Свяжитесь с нами!</p>
         <div class="about__contact-block about__contact-block--phone">
@@ -117,14 +136,14 @@
         </div>
         <div class="about__contact-block about__contact-block--adress">
           <h4>Приезжайте в гости:</h4>
-          <p><a href="#" aria-label="Наш адрес:">ул. Большая Конюшенная, 19/8</a></p>
+          <p><a href="#" aria-label="Наш адрес:">ул. Большая<br> Конюшенная, 19/8</a></p>
         </div>
+      </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Где мы находимся?</h2>
         <img src="img/mobile/map.png" width="320" height="200" alt="Наш адрес: ул. Большая Конюшенная, 19/8">
       </section>
-    </div>
     </main>
     <footer class="main-footer">
     <div class="container">

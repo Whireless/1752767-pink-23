@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+@import "normalize.scss";
+@import "variables.scss";
+@import "page-body.scss";
+@import "container.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-content.scss";
+@import "blocks/intro-info.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/about.scss";
+@import "blocks/map.scss";
+@import "blocks/main-footer.scss";
+
+// Стили для страницы формы
+@import "blocks/page-form.scss";
+@import "blocks/form.scss";
+
+// Стили для страницы каталога
+@import "blocks/users-photo.scss";
+@import "blocks/zone-download.scss";
+
+// Cтили для попАпов
+@import "blocks/popup-success.scss";
+@import "blocks/popup-fail.scss";

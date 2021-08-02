@@ -1,0 +1,20 @@
+.reviews {
+  h3 {
+    color: #000000;
+  }
+}
+
+.reviews__slider-block {
+  text-align: center;
+}
+
+.reviews__slider-list {
+  list-style: none;
+  display: flex;
+}
+
+.reviews__slider-item {
+  button {
+    border: none;
+  }
+}

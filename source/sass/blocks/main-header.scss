@@ -1,0 +1,101 @@
+.main-header {
+  color: #ffffff;
+  background: url("../img/mobile/bg-header.png") no-repeat;
+  z-index: 0;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.main-header__head-text {
+  width: 280px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.main-header__catalog-preview {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-header__form-preview {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-header__image-hand {
+  width: 320px;
+  height: 286px;
+  background: url("../img/mobile/phone-hand.png") no-repeat;
+}
+
+.main-header__platform-block {
+  margin-top: auto;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  background-color: $specColor;
+}
+
+.main-header__button-download {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 55px;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  margin-left: auto;
+}
+
+.main-header__platform-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 32px 0 0 38px;
+  padding: 0;
+  width: 204px;
+  height: 56px;
+}
+
+.main-header__platform-item {
+  &--ios {
+    width: 47px;
+    height: 56px;
+    background: url("..//img/apple-logo.svg") no-repeat;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url("..//img/android-logo.svg") no-repeat;
+  }
+
+  &--windows-phone {
+    width: 44px;
+    height: 41px;
+    background: url("..//img/microsoft-logo.svg") no-repeat;
+  }
+}
+
+.main-header__platform-info {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
