@@ -1,0 +1,18 @@
+.zone-download {
+  h2 {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 49px;
+    margin-bottom: 52px;
+  }
+}
+
+.zone-download__example-photo {
+  display: inline-block;
+  width: 280px;
+  height: 374px;
+  background: url("../img/mobile/catalog/upload.png") no-repeat;
+  cursor: pointer;
+}

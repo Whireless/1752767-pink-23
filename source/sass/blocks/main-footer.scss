@@ -1,0 +1,58 @@
+.main-footer__footer-logo {
+  display: block;
+  margin-top: 40px;
+  margin-left: 68px;
+  width: 145px;
+  height: 40px;
+  background: url("../img/mobile/logo-footer.svg") no-repeat;
+}
+
+.main-footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 41px 54px 53px 54px;
+  padding: 0;
+}
+
+.main-footer__social-item {
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+
+  &--twitter {
+    background: url("../img/twitter.svg") no-repeat center;
+  }
+
+  &--facebook {
+    background: url("../img/facebook.svg") no-repeat center;
+  }
+
+  &--youtube {
+    background: url("../img/youtube.svg") no-repeat center;
+  }
+
+  a {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.main-footer__who-develop {
+  display: flex;
+
+  p {
+    margin-left: 75px;
+    margin-top: 0;
+    margin-bottom: 51px;
+  }
+
+  a {
+    display: block;
+    width: 27px;
+    height: 34px;
+    background: url("../img/academy-footer.svg");
+    margin-left: 15px;
+  }
+}

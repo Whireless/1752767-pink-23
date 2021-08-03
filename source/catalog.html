@@ -2,15 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Каталог</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-    <div class="container">
       <nav class="main-nav">
+      <div class="main-nav__nav-head">
+      <div class="container">
         <a href="index.html"><img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов"></a>
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
+      </div>
+      </div>
         <ul class="main-nav__nav-list">
           <li class="main-nav__nav-item"><a href="index.html">Главная</a></li>
           <li class="main-nav__nav-item"><a href="#">Фотографии</a></li>
@@ -19,7 +25,6 @@
         </ul>
       </nav>
       <h1 class="main-header__catalog-preview">Фотографии пользователей</h1>
-    </div>
     </header>
     <main class="page-catalog">
     <div class="container">
@@ -27,8 +32,9 @@
         <h2 class="visually-hidden">Пользовательские фотографии</h2>
         <p class="users-photo__preview-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="users-photo__post">
-          <img src="" width="320" height="137" alt="Прежде чем забраться сюда, я помолилась раз 10 :D">
-          <h3>Анна</h3>
+          <a href="#"><img src="img/mobile/catalog/panorama.png" width="320" height="137" alt="Прежде чем забраться сюда, я помолилась раз 10 :D"></a>
+          <div class="users-photo__text-zone">
+          <h3>Анна</h3><time datetime="1970-01-01 00:00">(5 минут назад)</time>
           <p>Прыгать или нет? Напишите в
             комментарии свой совет и
             смотрите прямую трансляцию в
@@ -37,59 +43,72 @@
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 215</span>
           </div>
+          </div>
         </div>
         <div class="users-photo__post">
-          <img src="" width="280" height="180" alt="По заветам усатого ведущего с 1го канала: АААААвтомобиль!">
-          <h3>Левон</h3>
+          <a href="#"><img src="img/mobile/catalog/photo-1.png" width="280" height="180" alt="По заветам усатого ведущего с 1го канала: АААААвтомобиль!"></a>
+          <div class="users-photo__text-zone">
+          <h3>Левон</h3><time datetime="1970-01-01 00:00">(5 часов назад)</time>
           <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 356</span>
           </div>
+          </div>
         </div>
         <div class="users-photo__post">
-          <img src="" width="280" height="180" alt="На самом деле - вообще не обрадуются">
-          <h3>Антон</h3>
+          <a href="#"><img src="img/mobile/catalog/photo-2.png" width="280" height="180" alt="На самом деле - вообще не обрадуются"></a>
+          <div class="users-photo__text-zone">
+          <h3>Антон</h3><time datetime="1970-01-01 00:00">(12 часов назад)</time>
           <p>Соседи будут рады!</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 666</span>
           </div>
+          </div>
         </div>
         <div class="users-photo__post">
-          <img src="" width="280" height="180" alt="Дилема тысячилетия - облака или панорамные окна?">
-          <h3>Борис</h3>
+          <a href="#"><img src="img/mobile/catalog/photo-3.png" width="280" height="180" alt="Дилема тысячилетия - облака или панорамные окна?"></a>
+          <div class="users-photo__text-zone">
+          <h3>Борис</h3><time datetime="1970-01-01 00:00">(20 часов назад)</time>
           <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 215</span>
           </div>
+          </div>
         </div>
         <div class="users-photo__post">
-          <img src="" width="280" height="180" alt="Ну Краснодарский край как всегда">
-          <h3>Сергей</h3>
+          <a href="#"><img src="img/mobile/catalog/photo-4.png" width="280" height="180" alt="Ну Краснодарский край как всегда"></a>
+          <div class="users-photo__text-zone">
+          <h3>Сергей</h3><time datetime="1970-01-01 00:00">(25 часов назад)</time>
           <p>Самая кубанская в мире!</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 4</span>
           </div>
+          </div>
         </div>
         <div class="users-photo__post">
-          <img src="" width="280" height="180" alt="Сколько тонн снега ради фотки не раскидаешь?">
-          <h3>Максим</h3>
+          <a href="#"><img src="img/mobile/catalog/photo-5.png" width="280" height="180" alt="Сколько тонн снега ради фотки не раскидаешь?"></a>
+          <div class="users-photo__text-zone">
+          <h3>Максим</h3><time datetime="1970-01-01 00:00">(40 часов назад)</time>
           <p>Где снег-то?</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 150</span>
           </div>
+          </div>
         </div>
         <div class="users-photo__post">
-          <img src="" width="280" height="180" alt="Лечу снаружи самолёта и думаю о том, как же хорошо наверное лететь внутри">
-          <h3>Надежда</h3>
+          <a href="#"><img src="img/mobile/catalog/photo-6.png" width="280" height="180" alt="Лечу снаружи самолёта и думаю о том, как же хорошо наверное лететь внутри"></a>
+          <div class="users-photo__text-zone">
+          <h3>Надежда</h3><time datetime="1970-01-01 00:00">(45 часов назад)</time>
           <p>Всем GM и взаимные лайки!</p>
           <div class="users-photo__like-zone">
             <button type="button" aria-label="Поставить лайк"></button>
             <span>Нравится: 2560</span>
+          </div>
           </div>
         </div>
       </section>
@@ -97,9 +116,7 @@
         <h2>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         <form class="zone-download__form" action="https://echo.htmlacademy.ru/" method="POST">
           <input class="visually-hidden" type="file" name="user-photo" id="user-photo-zone">
-          <label for="user-photo-zone">
-          <div class="zone-download__example-photo"></div>
-          </label>
+          <label class="zone-download__example-photo" for="user-photo-zone"></label>
           <button class="zone-download__button zone-download__button--crop" type="button"></button>
           <button class="zone-download__button zone-download__button--fill" type="button"></button>
           <button class="zone-download__button zone-download__button--contrast" type="button"></button>

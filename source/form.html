@@ -2,15 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Форма</title>
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-    <div class="container">
       <nav class="main-nav">
+      <div class="main-nav__nav-head">
+      <div class="container">
         <a href="index.html"><img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов"></a>
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
+      </div>
+      </div>
         <ul class="main-nav__nav-list">
           <li class="main-nav__nav-item"><a href="index.html">Главная</a></li>
           <li class="main-nav__nav-item"><a href="catalog.html">Фотографии</a></li>
@@ -19,7 +25,6 @@
         </ul>
       </nav>
       <h1 class="main-header__form-preview">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
     </header>
     <main class="page-form">
     <div class="container">
@@ -28,12 +33,12 @@
     <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
       <h2>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
       <fieldset class="form__personal">
-        <input class="form__personal-input" type="text" name="surname" id="input-surname" placeholder="Укажите фамилию *" required>
         <label for="input-surname">Фамилия:</label>
-        <input class="form__personal-input" type="text" name="name" id="input-name" placeholder="Введите ваше имя *" required>
+        <input class="form__personal-input" type="text" name="surname" id="input-surname" placeholder="Укажите фамилию *" required>
         <label for="input-name">Имя:</label>
-        <input class="form__personal-input" type="text" name="fathers" id="input-fathers" placeholder="Ну и отчество тоже">
+        <input class="form__personal-input" type="text" name="name" id="input-name" placeholder="Введите ваше имя *" required>
         <label for="input-fathers">Отчество:</label>
+        <input class="form__personal-input" type="text" name="fathers" id="input-fathers" placeholder="Ну и отчество тоже">
       </fieldset>
       <fieldset class="form__achievements">
         <legend>Ваши безбашенные достижения в путешествии</legend>
@@ -51,10 +56,10 @@
         <label for="input-hotel">Разгромил отель</label>
       </fieldset>
       <fieldset class="form__contacts">
-        <input class="form__contacts-input" type="tel" name="number" id="input-number" placeholder="Номер, пожалуйста">
         <label for="input-number">Номер телефона</label>
-        <input class="form__contacts-input" type="email" name="email" id="input-email" placeholder="Введите почту *" required>
+        <input class="form__contacts-input" type="tel" name="number" id="input-number" placeholder="Номер, пожалуйста">
         <label for="input-email">Адрес почты</label>
+        <input class="form__contacts-input" type="email" name="email" id="input-email" placeholder="Введите почту *" required>
       </fieldset>
       <fieldset class="form__devices">
         <legend>С каким приложением путешествовали?</legend>

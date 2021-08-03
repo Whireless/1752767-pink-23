@@ -1,0 +1,68 @@
+.form {
+  h2 {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+}
+
+.form__personal {
+  border: none;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: $linkColor;
+  }
+}
+
+.form__achievements {
+  border: none;
+  display: flex;
+  flex-direction: column;
+
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+}
+
+.form__contacts {
+  border: none;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: $linkColor;
+  }
+}
+
+.form__devices {
+  border: none;
+  display: flex;
+  flex-direction: column;
+
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+}
+
+.form__emotions {
+  border: none;
+  display: flex;
+  flex-direction: column;
+
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+}
+
+.form__textzone {
+  resize: none;
+  height: 197px;
+}
