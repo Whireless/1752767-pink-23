@@ -12,10 +12,8 @@
     <header class="main-header">
       <nav class="main-nav">
       <div class="main-nav__nav-head">
-      <div class="container">
         <a href="#"><img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов"></a>
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
-      </div>
       </div>
         <ul class="main-nav__nav-list">
           <li class="main-nav__nav-item"><a href="#">Главная</a></li>
@@ -41,14 +39,15 @@
       </div>
     </header>
     <main class="main-content">
-    <div class="container">
       <div class="intro-info">
-        <p class="intro-info__intro-text">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+      <div class="container">
+        <p class="intro-info__intro-text">Устали от серости мегаполиса?<br>Нам есть, что вам<br> предложить!</p>
       </div>
     </div>
       <section class="advantages">
       <div class="container">
         <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+        <div class="advantages__zone-info">
         <div class="advantages__block-info advantages__block-info--mood">
           <h3>Поднимает настроение</h3>
           <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -61,13 +60,31 @@
           <h3>Заводит новых друзей</h3>
           <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <div class="advantages__image-advantages"></div>
+        </div>
+        <div class="advantages__image-block">
+        <div class="advantages__image advantages__image--grey"></div>
+        <div class="advantages__image advantages__image--pink"></div>
+        <div class="advantages__image advantages__image--hello"></div>
+        </div>
       </div>
+      </section>
+      <section class="effects">
+        <div class="container">
+          <div class="effects__effects-image"></div>
+          <div class="effects__effects-info">
+            <h3>Эффект на 24 часа!</h3>
+            <p>Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится целые сутки!</p>
+            <p class="effects__effects-link"><a href="#">Узнать больше об исследовании</a></p>
+          </div>
+        </div>
       </section>
       <section class="reviews slider">
       <div class="container">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <div class="reviews__slider-block">
+          <p class="reviews__human-info">25 лет, водитель трамвая</p>
           <h3>Николай Петров</h3>
           <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
@@ -126,23 +143,25 @@
       <div class="container">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="about__about-info">Остались вопросы?<br>Свяжитесь с нами!</p>
-        <div class="about__contact-block about__contact-block--phone">
+        <div class="about__contact-block">
+        <div class="about__contact-info about__contact-info--phone">
           <h4>Звоните:</h4>
           <p><a href="tel:+78125556666" aria-label="Позвонить нам:">+7 (812) 555-66-66</a></p>
         </div>
-        <div class="about__contact-block about__contact-block--email">
+        <div class="about__contact-info about__contact-info--email">
           <h4>Пишите:</h4>
           <p><a href="mailto:mail@htmlacademy.ru" aria-label="Написать нам:">mail@htmlacademy.ru</a></p>
         </div>
-        <div class="about__contact-block about__contact-block--adress">
+        <div class="about__contact-info about__contact-info--adress">
           <h4>Приезжайте в гости:</h4>
           <p><a href="#" aria-label="Наш адрес:">ул. Большая<br> Конюшенная, 19/8</a></p>
+        </div>
         </div>
       </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Где мы находимся?</h2>
-        <img src="img/mobile/map.png" width="320" height="200" alt="Наш адрес: ул. Большая Конюшенная, 19/8">
+        <img src="img/mobile/map.png" width="320" height="200" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, 19/8">
       </section>
     </main>
     <footer class="main-footer">

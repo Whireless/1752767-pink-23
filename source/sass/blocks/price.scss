@@ -2,7 +2,14 @@
   background-color: $bgColor;
 }
 
+.price-table {
+  border-collapse: collapse;
+}
+
 .price-table__header {
+  background-color: $textColor;
+  color: #ffffff;
+
   th {
     font-size: 16px;
     line-height: 30px;
@@ -22,6 +29,7 @@
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase;
+    border: 2px solid #e5e5e5;
   }
 }
 
@@ -35,5 +43,11 @@
 .price__slider-item {
   button {
     border: none;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .price-table {
+    width: 100%;
   }
 }

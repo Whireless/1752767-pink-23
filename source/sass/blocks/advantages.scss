@@ -2,15 +2,143 @@
   background-color: $bgColor;
 }
 
+.advantages__image-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__image {
+  &--grey {
+    display: none;
+  }
+
+  &--pink {
+    display: none;
+  }
+
+  &--hello {
+    width: 157px;
+    height: 320px;
+    background: url("../img/mobile/iphone.png") no-repeat;
+  }
+}
+
 .advantages__block-info {
   text-align: center;
 
   h3 {
     font-size: 18px;
     color: #000000;
+    margin-top: 43px;
+    margin-bottom: 24px;
   }
 
   p {
     margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .advantages {
+    width: 660px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 268px 310px;
+      column-gap: 42px;
+    }
+  }
+
+  .advantages__image-block {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .advantages__image {
+    &--hello {
+      width: 268px;
+      height: 547px;
+      background: url("../img/tablet/iphone.png") no-repeat;
+    }
+  }
+
+  .advantages__zone-info {
+    grid-column: 2;
+  }
+
+  .advantages__block-info {
+    width: 310px;
+    text-align: left;
+
+    h3 {
+      margin-top: 46px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .advantages {
+    width: 1200px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .advantages__image-block {
+    order: 1;
+    display: flex;
+    column-gap: 137px;
+  }
+
+  .advantages__image {
+    &--grey {
+      display: block;
+      width: 186px;
+      height: 382px;
+      background: url("../img/desktop/iphone.png") no-repeat;
+    }
+
+    &--pink {
+      display: block;
+      width: 186px;
+      height: 382px;
+      background: url("../img/desktop/iphone.png") no-repeat;
+    }
+
+    &--hello {
+      width: 186px;
+      height: 382px;
+      background: url("../img/desktop/iphone.png") no-repeat;
+    }
+  }
+
+  .advantages__zone-info {
+    order: 2;
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .advantages__block-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      width: 252px;
+      text-align: center;
+    }
   }
 }

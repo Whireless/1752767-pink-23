@@ -3,9 +3,10 @@
   line-height: 29px;
   font-weight: 300;
   text-align: center;
+  margin-bottom: 45px;
 }
 
-.about__contact-block {
+.about__contact-info {
   text-align: center;
 
   h4 {
@@ -26,5 +27,85 @@
     line-height: 33px;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  &--phone {
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .about__about-info {
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 55px;
+    margin-bottom: 51px;
+  }
+
+  .about__contact-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__contact-info {
+    h4 {
+      margin-bottom: 17px;
+    }
+
+    &--phone {
+      flex-basis: 50%;
+    }
+
+    &--email {
+      flex-basis: 50%;
+
+      h4 {
+        margin-top: 0;
+      }
+    }
+
+    &--adress {
+      flex-basis: 100%;
+
+      h4 {
+        margin-top: 55px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .about__about-info {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .about__contact-block {
+    display: flex;
+  }
+
+  .about__contact-info {
+    flex-basis: content;
+
+    &--phone {
+      order: 1;
+      margin-left: 47px;
+    }
+
+    &--email {
+      order: 3;
+      margin-left: 94px;
+    }
+
+    &--adress {
+      order: 2;
+      margin-left: 111px;
+
+      h4 {
+        margin-top: 0;
+      }
+    }
   }
 }

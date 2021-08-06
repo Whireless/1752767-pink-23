@@ -14,6 +14,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  margin-top: 5px;
   margin-bottom: 34px;
   text-align: center;
 }
@@ -98,4 +99,91 @@
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0;
+}
+
+@media (min-width: $tabletWidth) {
+  .main-header {
+    width: 660px;
+    background: url("../img/tablet/bg-header.png") no-repeat;
+    position: relative;
+  }
+
+  .main-header__head-text {
+    font-size: 40px;
+    line-height: 48px;
+    position: absolute;
+    left: 50px;
+    top: 205px;
+    width: 245px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main-header__platform-block {
+    background-color: rgba(29, 38, 49, 0);
+    position: absolute;
+    bottom: 70px;
+  }
+
+  .main-header__platform-list {
+    margin-top: 46px;
+  }
+
+  .main-header__button-download {
+    width: 294px;
+  }
+
+  .main-header__platform-info {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  .main-header__image-hand {
+    margin-top: 74px;
+    width: 660px;
+    height: 545px;
+    background: url("../img/tablet/phone-hand.png") no-repeat;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-header {
+    width: 1200px;
+    background: url("../img/desktop/bg-header.png") no-repeat;
+    position: relative;
+  }
+
+  .main-header__head-text {
+    font-size: 50px;
+    line-height: 68px;
+    position: absolute;
+    top: 210px;
+    left: 155px;
+  }
+
+  .main-header__platform-block {
+    position: absolute;
+    bottom: 90px;
+  }
+
+  .main-header__button-download {
+    font-size: 21px;
+  }
+
+  .main-header__platform-list {
+    margin-top: 65px;
+    margin-left: 47px;
+  }
+
+  .main-header__platform-info {
+    margin-top: 50px;
+  }
+
+  .main-header__image-hand {
+    width: 1050px;
+    height: 645px;
+    background: url("../img/desktop/phone-hand.png") no-repeat;
+    margin-top: 98px;
+    margin-left: 145px;
+  }
 }

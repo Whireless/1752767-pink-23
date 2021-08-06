@@ -5,3 +5,15 @@
   line-height: 24px;
   color: $textColor;
 }
+
+@media (min-width: $tabletWidth) {
+  .page-body {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .page-body {
+    width: 1200px;
+  }
+}
