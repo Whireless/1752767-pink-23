@@ -1,13 +1,13 @@
 .main-nav {
-  height: 66px;
-  background-color: rgba(0%, 0%, 0%, 0.3);
-  z-index: 1;
+  background-color: $textColor;
+  z-index: 2;
 }
 
 .main-nav__nav-head {
   display: flex;
   justify-content: space-between;
   padding: 20px 21px 20px 21px;
+  border-bottom: 1px solid #000000;
 }
 
 .main-nav__button-menu {
@@ -32,23 +32,29 @@
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
+  border-top: inset 1px rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
 }
 
 @media (min-width: $tabletWidth) {
   .main-nav {
-    height: 110px;
-    background-color: rgba(0%, 0%, 0%, 0.3);
+    background-color: $textColor;
   }
 
   .main-nav__nav-head {
-    padding: 43px 20px 43px 20px;
+    padding: 40px 20px 40px 20px;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .main-nav {
-    height: 110px;
     background-color: rgba(0%, 0%, 0%, 0.3);
+    display: flex;
+  }
+
+  .main-nav__nav-head {
+    margin-left: 130px;
+    border: none;
   }
 
   .main-nav__button-menu {
@@ -60,11 +66,14 @@
     flex-direction: row;
     column-gap: 79px;
     flex-wrap: wrap;
+    align-items: center;
+    margin-left: 173px;
   }
 
   .main-nav__nav-item {
     text-transform: none;
     font-weight: 400;
     line-height: 18px;
+    border: none;
   }
 }

@@ -1,0 +1,36 @@
+.price-table {
+  border-collapse: collapse;
+}
+
+.price-table__header {
+  background-color: $textColor;
+  color: #ffffff;
+
+  th {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  td {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+}
+
+.price-table__body {
+  td {
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .price-table {
+    width: 100%;
+  }
+}

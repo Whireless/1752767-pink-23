@@ -1,6 +1,7 @@
 .main-header {
   color: #ffffff;
   background: url("../img/mobile/bg-header.png") no-repeat;
+  background-size: cover;
   z-index: 0;
 
   a {
@@ -38,7 +39,7 @@
 .main-header__image-hand {
   width: 320px;
   height: 286px;
-  background: url("../img/mobile/phone-hand.png") no-repeat;
+  background: url("../img/mobile/hdr-phone.png") no-repeat;
 }
 
 .main-header__platform-block {
@@ -103,8 +104,8 @@
 
 @media (min-width: $tabletWidth) {
   .main-header {
-    width: 660px;
     background: url("../img/tablet/bg-header.png") no-repeat;
+    background-size: cover;
     position: relative;
   }
 
@@ -142,14 +143,14 @@
     margin-top: 74px;
     width: 660px;
     height: 545px;
-    background: url("../img/tablet/phone-hand.png") no-repeat;
+    background: url("../img/tablet/hdr-phone.png") no-repeat;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .main-header {
-    width: 1200px;
     background: url("../img/desktop/bg-header.png") no-repeat;
+    background-size: cover;
     position: relative;
   }
 
@@ -182,7 +183,7 @@
   .main-header__image-hand {
     width: 1050px;
     height: 645px;
-    background: url("../img/desktop/phone-hand.png") no-repeat;
+    background: url("../img/desktop/hdr-phone.png") no-repeat;
     margin-top: 98px;
     margin-left: 145px;
   }

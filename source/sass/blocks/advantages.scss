@@ -20,7 +20,7 @@
   &--hello {
     width: 157px;
     height: 320px;
-    background: url("../img/mobile/iphone.png") no-repeat;
+    background: url("../img/mobile/iphone-advant.png") no-repeat;
   }
 }
 
@@ -42,8 +42,6 @@
 
 @media (min-width: $tabletWidth) {
   .advantages {
-    width: 660px;
-
     .container {
       display: grid;
       grid-template-columns: 268px 310px;
@@ -60,7 +58,7 @@
     &--hello {
       width: 268px;
       height: 547px;
-      background: url("../img/tablet/iphone.png") no-repeat;
+      background: url("../img/tablet/iphone-advant.png") no-repeat;
     }
   }
 
@@ -80,8 +78,6 @@
 
 @media (min-width: $desktopWidth) {
   .advantages {
-    width: 1200px;
-
     .container {
       display: flex;
       flex-direction: column;
@@ -99,20 +95,20 @@
       display: block;
       width: 186px;
       height: 382px;
-      background: url("../img/desktop/iphone.png") no-repeat;
+      background: url("../img/desktop/iphone1.png") no-repeat;
     }
 
     &--pink {
       display: block;
       width: 186px;
       height: 382px;
-      background: url("../img/desktop/iphone.png") no-repeat;
+      background: url("../img/desktop/iphone2.png") no-repeat;
     }
 
     &--hello {
       width: 186px;
       height: 382px;
-      background: url("../img/desktop/iphone.png") no-repeat;
+      background: url("../img/desktop/iphone3.png") no-repeat;
     }
   }
 
