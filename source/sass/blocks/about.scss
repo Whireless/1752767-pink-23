@@ -20,6 +20,17 @@
     font-weight: 300;
     color: $linkColor;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $textColor;
+      border-bottom: 2px solid $textColor;
+    }
+
+    &:active {
+      color: rgba(40, 54, 69, 0.3);
+      border: none;
+    }
   }
 
   p {
