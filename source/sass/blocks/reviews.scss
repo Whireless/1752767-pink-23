@@ -4,17 +4,70 @@
   }
 }
 
+.reviews__human-info {
+  display: none;
+}
+
 .reviews__slider-block {
   text-align: center;
 }
 
 .reviews__slider-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
 .reviews__slider-item {
   button {
     border: none;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .reviews__slider-block {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 109px;
+
+    p {
+      margin: 0;
+      line-height: 30px;
+    }
+
+    p:last-of-type {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 51px;
+      margin-bottom: 17px;
+    }
+  }
+
+  .reviews__human-info {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .reviews__slider-block {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-style: 24px;
+    }
+
+    p:last-of-type {
+      width: 688px;
+    }
+  }
+
+  .reviews__human-info {
+    font-size: 18px;
   }
 }

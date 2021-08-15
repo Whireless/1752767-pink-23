@@ -1,33 +1,125 @@
 .main-nav {
   background-color: $textColor;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-nav__nav-head {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 21px 20px 21px;
+  border-bottom: 1px solid #000000;
 }
 
 .main-nav__button-menu {
   width: 50px;
   height: 24px;
   background: url("../img/mobile/nav-open.svg") no-repeat;
+  background-color: $textColor;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: url("../img/mobile/nav-open-hover.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__nav-item {
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
+  text-transform: uppercase;
+  border-top: inset 1px rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 63px;
+
+    &:hover,
+    &:focus {
+      color: $linkColor;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .main-nav {
+    background-color: $textColor;
+  }
+
+  .main-nav__nav-head {
+    padding: 40px 20px 40px 20px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-nav {
+    background-color: rgba(0%, 0%, 0%, 0.3);
+    display: flex;
+    min-width: 940px;
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .main-nav__nav-head {
+    border: none;
+  }
+
+  .main-nav__button-menu {
+    display: none;
+  }
+
+  .main-nav__nav-list {
+    width: 620px;
+    flex-direction: row;
+    column-gap: 79px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 173px;
+  }
+
+  .main-nav__nav-item {
+    text-transform: none;
+    font-weight: 400;
+    line-height: 18px;
+    border: none;
+
+    a {
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .index-page {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .catalog-page {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .form-page {
+    border-bottom: 2px solid #ffffff;
+  }
 }

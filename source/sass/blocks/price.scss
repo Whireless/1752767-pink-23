@@ -2,29 +2,6 @@
   background-color: $bgColor;
 }
 
-.price-table__header {
-  th {
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  td {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 300;
-  }
-}
-
-.price-table__body {
-  td {
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-}
-
 .price__slider-list {
   display: flex;
   list-style: none;
@@ -35,5 +12,17 @@
 .price__slider-item {
   button {
     border: none;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .price {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .price {
+    padding: 0 130px;
   }
 }

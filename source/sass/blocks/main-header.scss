@@ -1,7 +1,9 @@
 .main-header {
   color: #ffffff;
   background: url("../img/mobile/bg-header.png") no-repeat;
-  z-index: 0;
+  background-position: 50% 50%;
+  background-color: $specColor;
+  background-size: 660px 460px;
 
   a {
     text-decoration: none;
@@ -14,7 +16,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 34px;
+  margin: 29px auto 34px auto;
   text-align: center;
 }
 
@@ -34,17 +36,26 @@
   margin-bottom: 0;
 }
 
-.main-header__image-hand {
-  width: 320px;
-  height: 286px;
-  background: url("../img/mobile/phone-hand.png") no-repeat;
+.main-header__head-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  background: url("../img/mobile/hdr-phone.png") no-repeat;
+  background-position: 50% 135px;
+  background-color: rgba(29, 38, 49, 0);
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .main-header__platform-block {
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
   padding-top: 28px;
   padding-bottom: 38px;
-  background-color: $specColor;
 }
 
 .main-header__button-download {
@@ -59,7 +70,16 @@
   height: 55px;
   border: 3px solid #ffffff;
   border-radius: 29px;
-  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: $linkColor;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .main-header__platform-list {
@@ -67,7 +87,7 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  margin: 32px 0 0 38px;
+  margin: 32px 0 0 0;
   padding: 0;
   width: 204px;
   height: 56px;
@@ -98,4 +118,87 @@
   text-align: center;
   margin-top: 30px;
   margin-bottom: 0;
+}
+
+@media (min-width: $tabletWidth) {
+  .main-header {
+    background: url("../img/tablet/bg-header.png") no-repeat;
+    background-color: rgba(29, 38, 49, 0);
+    background-size: cover;
+  }
+
+  .main-header__head-text {
+    font-size: 40px;
+    line-height: 48px;
+    width: 245px;
+    margin: 15px auto 0 35px;
+  }
+
+  .main-header__head-info {
+    width: 620px;
+    height: 545px;
+    background: url("../img/tablet/hdr-phone.png") no-repeat;
+    background-position: 65% bottom;
+    margin-top: 74px;
+  }
+
+  .main-header__platform-block {
+    margin-top: 39px;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: inherit;
+  }
+
+  .main-header__button-download {
+    width: 294px;
+  }
+
+  .main-header__platform-list {
+    margin-top: 46px;
+  }
+
+  .main-header__platform-info {
+    font-size: 18px;
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .main-header {
+    background: url("../img/desktop/bg-header.png") no-repeat;
+    background-size: cover;
+  }
+
+  .main-header__head-text {
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 0;
+    margin-right: 640px;
+  }
+
+  .main-header__head-info {
+    height: 645px;
+    background: url("../img/desktop/hdr-phone.png") no-repeat;
+    background-position: 10% bottom;
+    padding: 0 130px;
+    margin-top: 98px;
+  }
+
+  .main-header__platform-block {
+    margin-top: 15px;
+    margin-right: 640px;
+  }
+
+  .main-header__button-download {
+    font-size: 21px;
+  }
+
+  .main-header__platform-list {
+    margin-top: 65px;
+  }
+
+  .main-header__platform-info {
+    margin-top: 50px;
+  }
 }
