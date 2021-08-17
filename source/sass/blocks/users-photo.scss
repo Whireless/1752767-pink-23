@@ -1,3 +1,9 @@
+.users-photo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 .users-photo__preview-text {
   line-height: 30px;
   font-weight: 400;
@@ -32,5 +38,39 @@
     font-size: 12px;
     font-weight: 400;
     color: $linkColor;
+  }
+}
+
+@media (min-width: $tabletWidth) {
+  .users-photo__preview-text {
+    font-size: 18px;
+  }
+
+  .users-photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .users-photo__post:not(:first-of-type) {
+    width: 300px;
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .users-photo {
+    row-gap: 54px;
+  }
+
+  .users-photo__post:not(:first-of-type) {
+    img {
+      height: 400px;
+    }
   }
 }

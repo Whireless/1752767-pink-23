@@ -15,8 +15,19 @@
   flex-direction: column;
 
   label {
+    text-transform: uppercase;
     color: $linkColor;
+    margin-top: 29px;
+    margin-bottom: 17px;
   }
+
+  label:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.form__personal-input {
+  padding: 17px 20px;
 }
 
 .form__achievements {
@@ -38,6 +49,10 @@
   label {
     color: $linkColor;
   }
+}
+
+.form__contacts-input {
+  padding: 17px 20px;
 }
 
 .form__devices {
@@ -65,4 +80,75 @@
 .form__textzone {
   resize: none;
   height: 197px;
+}
+
+@media (min-width: $tabletWidth) {
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 18px;
+      margin-top: 100px;
+    }
+
+    legend {
+      line-height: 30px;
+    }
+  }
+
+  .form__personal {
+    order: 1;
+  }
+
+  .form__devices {
+    border: 2px solid #e5e5e5;
+    order: 2;
+  }
+
+  .form__contacts {
+    border: 2px solid #e5e5e5;
+    order: 3;
+  }
+
+  .form__achievements {
+    border: 2px solid #e5e5e5;
+    order: 4;
+  }
+
+  .form__emotions {
+    border: 2px solid #e5e5e5;
+    order: 5;
+  }
+
+  .form__submitzone {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__personal {
+    width: 433px;
+  }
+
+  .form__devices {
+    width: 431px;
+  }
+
+  .form__contacts {
+    width: 100%;
+  }
+
+  .form__achievements {
+    width: 100%;
+  }
+
+  .form__emotions {
+    width: 100%;
+  }
 }

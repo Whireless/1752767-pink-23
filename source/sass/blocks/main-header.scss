@@ -11,6 +11,10 @@
   }
 }
 
+.main-header__nav-contain {
+  background-color: $textColor;
+}
+
 .main-header__head-text {
   width: 280px;
   font-weight: 300;
@@ -25,7 +29,9 @@
   line-height: 33px;
   font-weight: 300;
   text-align: center;
+  margin-top: 15px;
   margin-bottom: 0;
+  padding-bottom: 84px;
 }
 
 .main-header__form-preview {
@@ -33,6 +39,7 @@
   line-height: 33px;
   font-weight: 300;
   text-align: center;
+  margin-top: 36px;
   margin-bottom: 0;
 }
 
@@ -127,11 +134,25 @@
     background-size: cover;
   }
 
+  .main-header__nav-contain {
+    background-color: $textColor;
+  }
+
   .main-header__head-text {
     font-size: 40px;
     line-height: 48px;
     width: 245px;
     margin: 15px auto 0 35px;
+  }
+
+  .main-header__catalog-preview {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .main-header__form-preview {
+    font-size: 50px;
+    line-height: 68px;
   }
 
   .main-header__head-info {
@@ -168,6 +189,10 @@
   .main-header {
     background: url("../img/desktop/bg-header.png") no-repeat;
     background-size: cover;
+  }
+
+  .main-header__nav-contain {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .main-header__head-text {
