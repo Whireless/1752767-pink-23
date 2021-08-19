@@ -1,7 +1,10 @@
 .users-photo {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+  }
 }
 
 .users-photo__preview-text {
@@ -10,17 +13,22 @@
   text-align: center;
   margin-top: 54px;
   margin-bottom: 60px;
+  padding: 0 20px;
 }
 
-.users-photo__post {
-  background-color: $bgColor;
+.users-photo__post--panorama {
+  .users-photo__text-zone {
+    margin: 0 20px;
+  }
 }
 
 .users-photo__text-zone {
+  background-color: $bgColor;
   padding-left: 17px;
   padding-bottom: 26px;
 
   h3 {
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -47,28 +55,47 @@
   }
 
   .users-photo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 50px;
+    }
   }
 
-  .users-photo__post:not(:first-of-type) {
+  .users-photo__post:not(.users-photo__post--panorama) {
     width: 300px;
 
     img {
       width: 300px;
       height: 300px;
     }
+
+    .users-photo__text-zone {
+      height: 155px;
+    }
   }
 }
 
 @media (min-width: $desktopWidth) {
-  .users-photo {
-    row-gap: 54px;
+  .users-photo__preview-text {
+    padding: 0 130px;
   }
 
-  .users-photo__post:not(:first-of-type) {
+  .users-photo {
+    .container {
+      row-gap: 54px;
+    }
+  }
+
+  .users-photo__post--panorama {
+    .users-photo__text-zone {
+      margin: 0 130px;
+    }
+  }
+
+  .users-photo__post:not(.users-photo__post--panorama) {
     img {
       height: 400px;
     }

@@ -9,6 +9,12 @@
   }
 }
 
+.zone-download__form {
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: $bgColor;
+}
+
 .zone-download__example-photo {
   display: inline-block;
   width: 280px;
@@ -75,5 +81,17 @@
 
   .zone-download__button-post {
     margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .zone-download {
+    padding: 0 130px;
+    margin: 0 auto;
+  }
+
+  .zone-download__form {
+    padding: 57px 60px 57px 80px;
+    margin: 0;
   }
 }
