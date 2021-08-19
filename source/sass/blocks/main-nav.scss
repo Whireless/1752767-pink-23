@@ -1,5 +1,4 @@
 .main-nav {
-  background-color: $textColor;
   z-index: 2;
 }
 
@@ -63,10 +62,6 @@
 }
 
 @media (min-width: $tabletWidth) {
-  .main-nav {
-    background-color: $textColor;
-  }
-
   .main-nav__nav-head {
     padding: 40px 20px 40px 20px;
   }
@@ -74,9 +69,8 @@
 
 @media (min-width: $desktopWidth) {
   .main-nav {
-    background-color: rgba(0%, 0%, 0%, 0.3);
     display: flex;
-    min-width: 940px;
+    width: 940px;
     padding: 0 130px;
     margin: 0 auto;
   }
