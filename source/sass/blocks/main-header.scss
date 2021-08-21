@@ -12,7 +12,12 @@
 }
 
 .main-header__nav-contain {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: $textColor;
+  z-index: 3;
 }
 
 .main-header__head-text {
@@ -101,6 +106,12 @@
 }
 
 .main-header__platform-item {
+  a {
+    display: inline-block;
+    width: 50px;
+    height: 52px;
+  }
+
   &--ios {
     width: 47px;
     height: 56px;
@@ -132,6 +143,7 @@
     background: url("../img/tablet/bg-header.png") no-repeat;
     background-color: rgba(29, 38, 49, 0);
     background-size: cover;
+    padding-top: 140px;
   }
 
   .main-header__nav-contain {

@@ -1,7 +1,3 @@
-.main-nav {
-  z-index: 2;
-}
-
 .main-nav__nav-head {
   display: flex;
   justify-content: space-between;
@@ -9,22 +5,50 @@
   border-bottom: 1px solid #000000;
 }
 
+.main-nav__logo {
+  display: inline-block;
+}
+
 .main-nav__button-menu {
-  width: 50px;
-  height: 24px;
-  background: url("../img/mobile/nav-open.svg") no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 55px;
+  display: block;
   background-color: $textColor;
   border: none;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    background: url("../img/mobile/nav-open-hover.svg") no-repeat;
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
+
+.main-nav--open .main-nav__button-menu::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 23px;
+  right: 20px;
+  background: url("../img/mobile/nav-close.svg") no-repeat;
+  cursor: pointer;
+}
+
+.main-nav--close .main-nav__button-menu::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 21px;
+  right: 20px;
+  background: url("../img/mobile/nav-open.svg") no-repeat;
+  cursor: pointer;
+}
+
+.main-nav--no-js .main-nav__button-menu {
+  display: none;
 }
 
 .main-nav__nav-list {
@@ -62,21 +86,44 @@
 }
 
 @media (min-width: $tabletWidth) {
+  .main-nav__logo {
+    img {
+      width: 145px;
+      height: 40px;
+    }
+  }
+
+  .main-nav__button-menu {
+    top: 33px;
+    right: 20px;
+  }
+
   .main-nav__nav-head {
     padding: 40px 20px 40px 20px;
+  }
+}
+
+@media (max-width: $desktopWidth) {
+  .main-nav--close .main-nav__nav-item {
+    display: none;
   }
 }
 
 @media (min-width: $desktopWidth) {
   .main-nav {
     display: flex;
-    width: 940px;
     padding: 0 130px;
     margin: 0 auto;
   }
 
   .main-nav__nav-head {
     border: none;
+  }
+
+  .main-nav__logo {
+    img {
+      width: 147px;
+    }
   }
 
   .main-nav__button-menu {
@@ -89,7 +136,7 @@
     column-gap: 79px;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 173px;
+    margin-left: 120px;
   }
 
   .main-nav__nav-item {

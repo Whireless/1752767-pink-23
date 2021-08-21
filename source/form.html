@@ -6,14 +6,20 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Форма</title>
+    <title>Конкурс</title>
   </head>
   <body class="page-body">
     <header class="main-header">
       <div class="main-header__nav-contain">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--open main-nav--no-js">
       <div class="main-nav__nav-head">
-        <a href="index.html"><img class="main-nav__logo" src="img/mobile/logo.svg" width="74" height="23" alt="Логотип всех логотипов"></a>
+        <a class="main-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/desktop/logo.svg">
+            <source media="(min-width: 660px)" srcset="img/tablet/logo.svg">
+            <img src="img/mobile/logo.svg" alt="Логотип всех логотипов"></a>
+          </picture>
+        </a>
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
       </div>
         <ul class="main-nav__nav-list">
@@ -74,8 +80,8 @@
         <textarea class="form__textzone" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
       <div class="form__submitzone">
-       <button class="form__button-submit" type="submit">Отправить форму</button>
-       <p class="form__important-fields">* — обязательные поля</p>
+      <button class="form__button-submit" type="submit">Отправить форму</button>
+      <p class="form__important-fields">* — обязательные поля</p>
       </div>
     </form>
     </section>
@@ -84,9 +90,9 @@
     <div class="container">
         <a class="main-footer__footer-logo" href="index.html"></a>
         <ul class="main-footer__social-list">
-          <li class="main-footer__social-item main-footer__social-item--twitter"><a href="#" aria-label="Мы в Твиттере"></a></li>
-          <li class="main-footer__social-item main-footer__social-item--facebook"><a href="#" aria-label="Мы в Фейсбуке"></a></li>
-          <li class="main-footer__social-item main-footer__social-item--youtube"><a href="#" aria-label="Мы на Ютубе"></a></li>
+          <li class="main-footer__social-item main-footer__social-item--twitter"><a href="https://twitter.com/" aria-label="Мы в Твиттере"></a></li>
+          <li class="main-footer__social-item main-footer__social-item--facebook"><a href="https://www.facebook.com/" aria-label="Мы в Фейсбуке"></a></li>
+          <li class="main-footer__social-item main-footer__social-item--youtube"><a href="https://www.youtube.com/" aria-label="Мы на Ютубе"></a></li>
         </ul>
         <div class="main-footer__who-develop">
           <p>Разработано</p>
@@ -112,5 +118,6 @@
           скорее всего вы забыли их заполнить</p>
         <button type="button">Ок</button>
     </section>
+    <script src="js/main-menu.js"></script>
   </body>
 </html>
