@@ -1,5 +1,10 @@
 .advantages {
   background-color: $bgColor;
+  clip-path: polygon(0 10%, 100% 5%, 100% 100%, 0% 100%);
+
+  .container {
+    padding-top: 80px;
+  }
 }
 
 .advantages__image-block {
@@ -81,6 +86,7 @@
     .container {
       display: flex;
       flex-direction: column;
+      padding-bottom: 59px;
     }
   }
 
@@ -116,6 +122,7 @@
     order: 2;
     display: flex;
     column-gap: 20px;
+    background-color: $bgColor;
   }
 
   .advantages__block-info {

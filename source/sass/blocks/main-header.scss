@@ -12,12 +12,7 @@
 }
 
 .main-header__nav-contain {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   background-color: $textColor;
-  z-index: 3;
 }
 
 .main-header__head-text {
@@ -143,11 +138,7 @@
     background: url("../img/tablet/bg-header.png") no-repeat;
     background-color: rgba(29, 38, 49, 0);
     background-size: cover;
-    padding-top: 140px;
-  }
-
-  .main-header__nav-contain {
-    background-color: $textColor;
+    padding-top: 127px;
   }
 
   .main-header__head-text {
@@ -172,6 +163,7 @@
     height: 545px;
     background: url("../img/tablet/hdr-phone.png") no-repeat;
     background-position: 65% bottom;
+    padding-top: 0;
     margin-top: 74px;
   }
 

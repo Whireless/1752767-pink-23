@@ -10,6 +10,7 @@
       display: grid;
       grid-template-columns: 238px 310px;
       column-gap: 72px;
+      padding-bottom: 59px;
     }
   }
 
@@ -51,10 +52,12 @@
     .container {
       display: grid;
       grid-template-columns: 298px 534px;
+      padding-bottom: 67px;
     }
   }
 
   .effects__effects-image {
+    margin-top: 17px;
     width: 298px;
     height: 345px;
     background-size: contain;
