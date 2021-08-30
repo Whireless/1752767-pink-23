@@ -1,9 +1,9 @@
 const navMain = document.querySelector('.main-nav');
 const navButton = document.querySelector('.main-nav__button-menu');
-const navList = document.querySelector('.main-nav__nav-list'); //(Скрытие меню при загрузке JS)
+const mainHeader = document.querySelector('.main-header');
 
-  navList.classList.add('main-nav--disable'); //(Скрытие меню при загрузке JS)
-  navMain.classList.remove('main-nav--no-js')
+  mainHeader.classList.add('main-header--js');
+  navMain.classList.add('main-nav--close');
 
   navButton.addEventListener('click', function() {
     if (navMain.classList.contains('main-nav--close')) {

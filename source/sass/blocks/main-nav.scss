@@ -1,18 +1,4 @@
 .main-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 3;
-  background-color: $textColor;
-}
-
-.main-nav--disable {
-  display: none;
-}
-
-.main-nav--no-js {
-  position: static;
   background-color: $textColor;
 }
 
@@ -52,7 +38,6 @@
   display: block;
   background-color: inherit;
   border: none;
-  cursor: pointer;
 
   &:active {
     opacity: 0.3;
@@ -60,37 +45,51 @@
 }
 
 .main-nav--open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
   background-color: $textColor;
 
-  .main-nav__button-menu::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    top: 23px;
-    right: 20px;
-    background: url("../img/mobile/nav-close.svg") no-repeat;
+  .main-nav__button-menu {
     cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: 23px;
+      right: 20px;
+      background: url("../img/mobile/nav-close.svg") no-repeat;
+      cursor: pointer;
+    }
   }
 }
 
 .main-nav--close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
   background-color: rgba(0, 0, 0, 0.3);
 
-  .main-nav__button-menu::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 24px;
-    top: 21px;
-    right: 20px;
-    background: url("../img/mobile/nav-open.svg") no-repeat;
+  .main-nav__button-menu {
     cursor: pointer;
-  }
-}
 
-.main-nav--no-js .main-nav__button-menu {
-  display: none;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 24px;
+      top: 21px;
+      right: 20px;
+      background: url("../img/mobile/nav-open.svg") no-repeat;
+      cursor: pointer;
+    }
+  }
 }
 
 .main-nav__nav-list {
@@ -128,10 +127,6 @@
 }
 
 @media (min-width: $tabletWidth) {
-  .main-nav--no-js {
-    margin-top: -127px;
-  }
-
   .main-nav__logo {
     svg {
       &:nth-child(2) {
@@ -171,11 +166,8 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .main-nav--no-js {
-    margin-top: -127px;
-  }
-
   .main-nav__nav-head {
+    padding: 27px 0 43px 0;
     border: none;
   }
 
@@ -202,7 +194,7 @@
     column-gap: 79px;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 120px;
+    margin-left: auto;
   }
 
   .main-nav__nav-item {
