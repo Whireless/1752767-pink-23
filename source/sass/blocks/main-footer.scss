@@ -16,6 +16,12 @@
 }
 
 .main-footer__social-item {
+  a {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+  }
+
   width: 42px;
   height: 42px;
   border: 3px solid rgba(40, 54, 69, 0.1);
@@ -40,11 +46,6 @@
 
   &--youtube {
     background: url("../img/youtube.svg") no-repeat center;
-  }
-
-  a {
-    width: 42px;
-    height: 42px;
   }
 }
 
@@ -110,7 +111,7 @@
 
   .main-footer__footer-logo {
     width: 147px;
-    background: url("../img/desktop/logo-footer.png") no-repeat;
+    background: url("../img/desktop/logo-footer.svg") no-repeat;
     margin-top: 70px;
   }
 

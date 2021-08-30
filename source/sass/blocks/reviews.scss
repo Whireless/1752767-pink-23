@@ -14,14 +14,24 @@
 
 .reviews__slider-list {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 19px;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
-.reviews__slider-item {
-  button {
-    border: none;
+.reviews__slider-button {
+  border: none;
+  width: 3px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--active {
+    background-color: #ffffff;
+    border: 2px solid $textColor;
   }
 }
 
