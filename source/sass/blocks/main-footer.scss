@@ -1,6 +1,10 @@
+.main-footer {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+
 .main-footer__footer-logo {
   display: block;
-  margin-top: 40px;
   margin-left: 68px;
   width: 145px;
   height: 40px;
@@ -16,20 +20,22 @@
 }
 
 .main-footer__social-item {
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  transition: 0.5s;
+
   a {
     display: inline-block;
     width: 42px;
     height: 42px;
   }
 
-  width: 42px;
-  height: 42px;
-  border: 3px solid rgba(40, 54, 69, 0.1);
-  border-radius: 50%;
-
   &:hover,
   &:focus {
     border: 3px solid rgba(40, 54, 69, 1);
+    transition: 0.5s;
   }
 
   &:active {
@@ -53,36 +59,39 @@
   display: flex;
 
   p {
+    align-self: center;
     margin-left: 75px;
     margin-top: 0;
-    margin-bottom: 51px;
+    margin-bottom: 0;
   }
 
   a {
     display: block;
+    height: 34px;
     margin-left: 15px;
   }
 }
 
 @media (min-width: $tabletWidth) {
   .main-footer {
+    padding-top: 36px;
     padding-bottom: 40px;
 
     .container {
       display: grid;
       grid-template-columns: 1fr 79px 1fr 94px 1fr;
+      padding: 0;
     }
   }
 
   .main-footer__footer-logo {
-    margin-top: 36px;
-    margin-left: 0;
+    margin: 0;
   }
 
   .main-footer__social-list {
     grid-column: 3;
     width: 172px;
-    margin: 39px 0 0 0;
+    margin: 0;
     justify-content: flex-start;
     column-gap: 14px;
     flex-wrap: wrap;
@@ -90,7 +99,8 @@
 
   .main-footer__who-develop {
     grid-column: 5;
-    margin-top: 47px;
+    align-items: center;
+    padding-bottom: 0;
 
     p {
       margin-left: 0;
@@ -101,6 +111,7 @@
 
 @media (min-width: $desktopWidth) {
   .main-footer {
+    padding-top: 70px;
     padding-bottom: 75px;
 
     .container {
@@ -112,16 +123,9 @@
   .main-footer__footer-logo {
     width: 147px;
     background: url("../img/desktop/logo-footer.svg") no-repeat;
-    margin-top: 70px;
-  }
-
-  .main-footer__social-list {
-    margin-top: 74px;
   }
 
   .main-footer__who-develop {
-    margin-top: 81px;
-
     p {
       font-size: 18px;
     }

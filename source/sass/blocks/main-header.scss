@@ -30,12 +30,13 @@
 }
 
 .main-header__catalog-preview {
+  width: 172px;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 0;
+  margin: 0 auto;
+  padding-top: 15px;
   padding-bottom: 84px;
 }
 
@@ -44,8 +45,8 @@
   line-height: 33px;
   font-weight: 300;
   text-align: center;
-  margin-top: 36px;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 36px 20px 51px 20px;
 }
 
 .main-header__head-info {
@@ -80,11 +81,13 @@
   height: 55px;
   border: 3px solid #ffffff;
   border-radius: 29px;
+  transition: 0.5s;
 
   &:hover,
   &:focus {
     background-color: #ffffff;
     color: $linkColor;
+    transition: 0.5s;
   }
 
   &:active {
@@ -151,13 +154,16 @@
   }
 
   .main-header__catalog-preview {
+    width: 358px;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 100px;
   }
 
   .main-header__form-preview {
     font-size: 50px;
     line-height: 68px;
+    padding-top: 115px;
   }
 
   .main-header__head-info {
@@ -206,6 +212,10 @@
     line-height: 68px;
     margin-left: 0;
     margin-right: 640px;
+  }
+
+  .main-header__form-preview {
+    padding: 95px 130px 104px 130px;
   }
 
   .main-header__head-info {

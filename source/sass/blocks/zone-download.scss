@@ -10,7 +10,7 @@
 }
 
 .zone-download__form {
-  padding: 0 20px;
+  padding: 20px 20px 41px 20px;
   margin: 0 auto;
   background-color: $bgColor;
 }
@@ -23,9 +23,84 @@
   cursor: pointer;
 }
 
+.zone-download__edit-zone {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.zone-download__button {
+  border: none;
+  cursor: pointer;
+
+  svg {
+    fill: rgba(40, 54, 69, 0.3);
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+      fill: rgba(40, 54, 69, 0.5);
+      transition: 0.5s;
+    }
+
+    &:active {
+      fill: $linkColor;
+    }
+  }
+
+  &--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.zone-download__range-zone {
+  border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    display: none;
+  }
+}
+
+.zone-download__strip {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: $textColor;
+  margin-top: 39px;
+  margin-bottom: 38px;
+  margin-left: auto;
+  margin-right: auto;
+
+  button {
+    position: absolute;
+    top: -5px;
+    right: 15%;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 2px solid $linkColor;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
 .zone-download__post-zone {
   display: flex;
   flex-direction: column;
+  padding-top: 38px;
 }
 
 .zone-download__button-post {
@@ -38,12 +113,14 @@
   border: 3px solid $linkColor;
   border-radius: 30px;
   margin-bottom: 12px;
+  transition: 0.5s;
 }
 
 .zone-download__button-post:hover,
 .zone-download__button-post:focus {
   color: #ffffff;
   background-color: $linkColor;
+  transition: 0.5s;
 }
 
 .zone-download__button-post:active {
@@ -59,12 +136,14 @@
   height: 55px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 30px;
+  transition: 0.5s;
 }
 
 .zone-download__button-cancel:hover,
 .zone-download__button-cancel:focus {
   color: rgba(40, 54, 69, 0.3);
   border: 3px solid rgba(40, 54, 69, 0.3);
+  transition: 0.5s;
 }
 
 .zone-download__button-cancel:active {
@@ -77,6 +156,88 @@
     h2 {
       font-size: 18px;
     }
+  }
+
+  .zone-download__form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 57px;
+    padding-bottom: 0;
+  }
+
+  .zone-download__example {
+    height: 400px;
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .zone-download__example-photo {
+    width: 300px;
+    height: 393px;
+    background-size: 300px 400px;
+  }
+
+  .zone-download__edit-zone {
+    position: absolute;
+    top: 75px;
+    right: 290px;
+    width: 24px;
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  .zone-download__button {
+    &--crop {
+      margin-bottom: 40px;
+
+      svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    &--fill {
+      margin-bottom: 40px;
+
+      svg {
+        width: 24px;
+        height: 22px;
+      }
+    }
+
+    &--contrast {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .zone-download__regulating-zone {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 45px;
+  }
+
+  .zone-download__range-zone {
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      display: block;
+    }
+  }
+
+  .zone-download__strip {
+    width: 202px;
+  }
+
+  .zone-download__post-zone {
+    height: 134px;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+    padding-top: 20px;
   }
 
   .zone-download__button-post {
