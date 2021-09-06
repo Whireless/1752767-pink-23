@@ -1,10 +1,11 @@
 .price {
   background-color: $bgColor;
+  clip-path: polygon(0 10%, 100% 5%, 100% 100%, 0% 100%);
 }
 
 .price__table-content {
   overflow: hidden;
-  padding: 100px 0 45px 0;
+  padding: 120px 0 45px 0;
   margin: 0 auto;
 }
 
@@ -34,6 +35,7 @@
 @media (min-width: $tabletWidth) {
   .price {
     padding: 0 20px;
+    clip-path: polygon(0 15%, 100% 5%, 100% 100%, 0% 100%);
   }
 
   .price__table-content {
@@ -48,9 +50,10 @@
 @media (min-width: $desktopWidth) {
   .price {
     padding: 0 130px;
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
   }
 
   .price__table-content {
-    padding: 100px 0 98px 0;
+    padding: 120px 0 98px 0;
   }
 }

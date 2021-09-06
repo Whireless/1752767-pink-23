@@ -54,71 +54,73 @@
     <main class="page-form">
     <section class="page-form__main-form">
       <h2 class="visually-hidden">А тут у нас замечательная форма обратной связи!</h2>
+      <h2 class="page-form__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
     <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
-      <h2>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
       <fieldset class="form__personal">
-        <div class="form__personal--input-zone">
+        <div class="form__person form__person--input-zone">
           <label for="input-surname">Фамилия:</label>
           <input class="form__personal-input" type="text" name="surname" id="input-surname" placeholder="Укажите фамилию *" required>
         </div>
-        <div class="form__personal--input-zone">
+        <div class="form__person form__person--input-zone">
           <label for="input-name">Имя:</label>
           <input class="form__personal-input" type="text" name="name" id="input-name" placeholder="Введите ваше имя *" required>
         </div>
-        <div class="form__personal--input-zone">
+        <div class="form__person form__person--input-zone">
           <label for="input-fathers">Отчество:</label>
           <input class="form__personal-input" type="text" name="fathers" id="input-fathers" placeholder="Ну и отчество тоже">
         </div>
       </fieldset>
       <fieldset class="form__achievements">
         <legend>Ваши безбашенные достижения в путешествии</legend>
-        <div class="form__achievements--check-zone">
+        <div class="form__achievements-block">
+        <div class="form__achievement form__achievement--check-zone">
           <input class="form__achievements-input visually-hidden" type="checkbox" name="selfieShark" id="input-shark" checked>
           <label for="input-shark">Сделал селфи с акулой</label>
         </div>
-        <div class="form__achievements--check-zone">
+        <div class="form__achievement form__achievement--check-zone">
           <input class="form__achievements-input visually-hidden" type="checkbox" name="fireOnBeach" id="input-beach" checked>
           <label for="input-beach">Обгорел на пляже</label>
         </div>
-        <div class="form__achievements--check-zone">
+        <div class="form__achievement form__achievement--check-zone">
           <input class="form__achievements-input visually-hidden" type="checkbox" name="seeNorris" id="input-norris">
           <label for="input-norris">Видел Чака Норриса</label>
         </div>
-        <div class="form__achievements--check-zone">
+        <div class="form__achievement form__achievement--check-zone">
           <input class="form__achievements-input visually-hidden" type="checkbox" name="buySouvenirs" id="input-souvenirs">
           <label for="input-souvenirs">Накупил сувениров</label>
         </div>
-        <div class="form__achievements--check-zone">
+        <div class="form__achievement form__achievement--check-zone">
           <input class="form__achievements-input visually-hidden" type="checkbox" name="keptTower" id="input-tower" checked>
           <label for="input-tower">Удержал башню</label>
         </div>
-        <div class="form__achievements--check-zone">
+        <div class="form__achievement form__achievement--check-zone">
           <input class="form__achievements-input visually-hidden" type="checkbox" name="chaosHotel" id="input-hotel">
           <label for="input-hotel">Разгромил отель</label>
+        </div>
         </div>
       </fieldset>
       <fieldset class="form__contacts">
         <legend>Контактная информация</legend>
-        <div class="form__contacts--input-zone">
+        <div class="form__contact form__contact--input-zone">
           <label for="input-number">Номер телефона:</label>
           <input class="form__contacts-input" type="tel" name="number" id="input-number" placeholder="Номер, пожалуйста">
         </div>
-        <div class="form__contacts--input-zone">
+        <div class="form__contact form__contact--input-zone">
           <label for="input-email">Адрес почты:</label>
           <input class="form__contacts-input" type="email" name="email" id="input-email" placeholder="Введите почту *" required>
         </div>
       </fieldset>
       <fieldset class="form__devices">
         <legend>С каким приложением путешествовали?</legend>
-        <div class="form__devices--radio-zone">
+        <div class="form__device form__device--radio-zone">
           <input class="form__devices-input visually-hidden" type="radio" name="device" id="device-ios" checked>
           <label for="device-ios">Pink для iOS</label>
         </div>
-        <div class="form__devices--radio-zone">
+        <div class="form__device form__device--radio-zone">
           <input class="form__devices-input visually-hidden" type="radio" name="device" id="device-android">
           <label for="device-android">Pink на Android</label>
         </div>
-        <div class="form__devices--radio-zone">
+        <div class="form__device form__device--radio-zone">
           <input class="form__devices-input visually-hidden" type="radio" name="device" id="device-winphone">
           <label for="device-winphone">Windows Phone</label>
         </div>

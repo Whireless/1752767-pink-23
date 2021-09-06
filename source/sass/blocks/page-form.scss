@@ -1,0 +1,25 @@
+.page-form__intro {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 54px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tabletWidth) {
+  .page-form__intro {
+    width: 490px;
+    font-size: 18px;
+    margin: 100px auto 82px auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktopWidth) {
+  .page-form__intro {
+    width: 756px;
+    margin: 100px auto 70px auto;
+  }
+}

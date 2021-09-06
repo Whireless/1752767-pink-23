@@ -3,11 +3,17 @@
   background: url("../img/mobile/bg-header.png") no-repeat;
   background-position: 50% 257px;
   background-color: $specColor;
-  background-size: 700px 460px;
+  background-size: 660px 460px;
 
   a {
     text-decoration: none;
     color: #ffffff;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/mobile/bg-header@2x.png") no-repeat;
+    background-size: 660px 460px;
+    background-color: $specColor;
   }
 }
 
@@ -59,6 +65,12 @@
   background-color: rgba(29, 38, 49, 0);
   padding: 25px 20px 38px 20px;
   margin: 0 auto;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/mobile/hdr-phone@2x.png") no-repeat;
+    background-size: 320px 286px;
+    background-position: 0 100px;
+  }
 }
 
 .main-header__platform-block {
@@ -143,7 +155,12 @@
   .main-header {
     background: url("../img/tablet/bg-header.png") no-repeat;
     background-color: rgba(29, 38, 49, 0);
-    background-size: cover;
+    background-size: 1200px 728px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/tablet/bg-header@2x.png") no-repeat;
+      background-size: 1200px 728px;
+    }
   }
 
   .main-header__head-text {
@@ -173,6 +190,12 @@
     background-position: 65% bottom;
     padding-top: 0;
     margin-top: 74px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/tablet/hdr-phone@2x.png") no-repeat;
+      background-size: 660px 545px;
+      background-position: 65% bottom;
+    }
   }
 
   .main-header__platform-block {
@@ -201,6 +224,11 @@
   .main-header {
     background: url("../img/desktop/bg-header.png") no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/desktop/bg-header@2x.png") no-repeat;
+      background-size: cover;
+    }
   }
 
   .main-header__nav-contain {
@@ -224,6 +252,12 @@
     background-position: 10% bottom;
     padding: 0 130px;
     margin-top: 98px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/desktop/hdr-phone@2x.png") no-repeat;
+      background-size: 1050px 645px;
+      background-position: 10% bottom;
+    }
   }
 
   .main-header__platform-block {

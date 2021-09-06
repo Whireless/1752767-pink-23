@@ -23,7 +23,19 @@
   }
 
   &--panorama {
+    width: 320px;
+    position: relative;
     margin: 0 auto;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 140px;
+      height: 36px;
+      background: url("../img/mobile/catalog/panorama-day.svg") no-repeat;
+    }
 
     img {
       width: 100%;
@@ -31,12 +43,14 @@
 
     .users-photo__text-zone {
       margin: 0 20px;
+      margin-top: -7px;
     }
   }
 }
 
 .users-photo__text-zone {
   background-color: $bgColor;
+  margin-top: -7px;
   padding: 15px 0 20px 17px;
 
   h3 {
@@ -99,6 +113,12 @@
 
   .users-photo__post {
     &--panorama {
+      width: 660px;
+
+      &::after {
+        top: 57px;
+      }
+
       img {
         height: 509px;
       }
@@ -171,12 +191,20 @@
 
   .users-photo__post {
     &--panorama {
+      width: 1200px;
+
+      &::after {
+        top: 54px;
+        right: 130px;
+      }
+
       img {
         height: 506px;
       }
 
       .users-photo__text-zone {
         margin: 0 130px;
+        margin-top: -7px;
       }
     }
 
