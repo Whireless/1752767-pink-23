@@ -1,15 +1,19 @@
 .form {
+  max-width: 1200px;
+  margin: 0 auto;
+
   fieldset {
-    padding: 0 20px;
+    position: relative;
   }
 
-  h2 {
-    font-size: 14px;
+  label {
     line-height: 30px;
-    font-weight: 400;
+  }
+
+  legend {
+    display: inline-block;
     text-align: center;
-    margin-top: 54px;
-    margin-bottom: 54px;
+    line-height: 18px;
   }
 }
 
@@ -17,11 +21,17 @@
   border: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 44px;
 
   label {
     text-transform: uppercase;
     color: $linkColor;
     margin-top: 29px;
+    margin-left: 23px;
     margin-bottom: 17px;
   }
 
@@ -30,19 +40,113 @@
   }
 }
 
-.form__personal-input {
+.form__person {
+  &--input-zone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 29px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__personal-input,
+.form__contacts-input {
   padding: 17px 20px;
+  border: 2px solid $greyColor;
+  border-radius: 1px;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $textColor;
+    transition: 0.5s;
+  }
+
+  &:active {
+    border: 2px solid $linkColor;
+  }
 }
 
 .form__achievements {
   border: none;
-  display: flex;
-  flex-direction: column;
   background-color: $bgColor;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 115px;
+  padding-bottom: 44px;
 
   legend {
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    right: 20px;
     text-transform: uppercase;
     color: $linkColor;
+  }
+
+  label {
+    font-size: 18px;
+    margin-left: 59px;
+  }
+}
+
+.form__achievement {
+  &--check-zone {
+    margin-bottom: 45px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__achievements-input {
+  & + label {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      bottom: -8px;
+      width: 40px;
+      height: 40px;
+      background: url("../img/input-style/chkbox-off.svg") no-repeat;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background: url("../img/input-style/chkboxHvr-off.svg") no-repeat;
+    }
+
+    &:active::before {
+      background: url("../img/input-style/chkboxAct-off.svg") no-repeat;
+    }
+  }
+
+  &:checked + label {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -60px;
+      bottom: -8px;
+      width: 40px;
+      height: 40px;
+      background: url("../img/input-style/chkbox-on.svg") no-repeat;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      background: url("../img/input-style/chkboxHvr-on.svg") no-repeat;
+    }
+
+    &:active::after {
+      background: url("../img/input-style/chkboxAct-on.svg") no-repeat;
+    }
   }
 }
 
@@ -50,14 +154,39 @@
   border: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 44px;
+
+  legend {
+    text-transform: uppercase;
+    color: $linkColor;
+    display: none;
+  }
 
   label {
+    text-transform: uppercase;
     color: $linkColor;
+    margin-left: 23px;
+    margin-bottom: 17px;
   }
 }
 
-.form__contacts-input {
-  padding: 17px 20px;
+.form__contact {
+  &--input-zone {
+    display: flex;
+    flex-direction: column;
+
+    &:first-of-type {
+      margin-top: 42px;
+    }
+
+    &:last-of-type {
+      margin-top: 29px;
+    }
+  }
 }
 
 .form__devices {
@@ -65,10 +194,80 @@
   display: flex;
   flex-direction: column;
   background-color: $bgColor;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 111px;
+  padding-bottom: 42px;
 
   legend {
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    right: 20px;
     text-transform: uppercase;
     color: $linkColor;
+  }
+
+  label {
+    font-size: 18px;
+    margin-left: 70px;
+  }
+}
+
+.form__device {
+  &--radio-zone {
+    margin-bottom: 38px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__devices-input {
+  & + label {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -70px;
+      bottom: -8px;
+      width: 41px;
+      height: 41px;
+      background: url("../img/input-style/rdo-off.svg") no-repeat;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      background: url("../img/input-style/rdoHvr-off.svg") no-repeat;
+    }
+
+    &:active::before {
+      background: url("../img/input-style/rdoAct-off.svg") no-repeat;
+    }
+  }
+
+  &:checked + label {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -70px;
+      bottom: -8px;
+      width: 41px;
+      height: 41px;
+      background: url("../img/input-style/rdo-on.svg") no-repeat;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      background: url("../img/input-style/rdoHvr-on.svg") no-repeat;
+    }
+
+    &:active::after {
+      background: url("../img/input-style/rdoAct-on.svg") no-repeat;
+    }
   }
 }
 
@@ -76,20 +275,80 @@
   border: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 74px;
+  padding-bottom: 0;
 
   legend {
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    right: 20px;
     text-transform: uppercase;
     color: $linkColor;
   }
 }
 
 .form__textzone {
-  resize: none;
   height: 197px;
+  border: 2px solid $greyColor;
+  border-radius: 1px;
+  resize: none;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $textColor;
+    transition: 0.5s;
+  }
+
+  &:active {
+    border: 2px solid $linkColor;
+  }
 }
 
 .form__submitzone {
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 20px 0 20px;
+}
+
+.form__button-submit {
+  text-transform: uppercase;
+  display: block;
+  width: 276px;
+  height: 59px;
+  font-size: 18px;
+  background-color: $greenColor;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover,
+  &focus {
+    background-color: $greenColor-h;
+    transition: 0.5s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $greyColor;
+  }
+}
+
+.form__important-fields {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 46px;
+  margin-bottom: 0;
 }
 
 @media (min-width: $tabletWidth) {
@@ -99,48 +358,216 @@
     padding: 0 20px;
 
     fieldset {
-      padding: 0;
-    }
-
-    h2 {
-      font-size: 18px;
-      margin-top: 100px;
+      position: static;
+      margin-bottom: 51px;
     }
 
     legend {
+      position: static;
+      margin: 0 auto;
       line-height: 30px;
     }
   }
 
   .form__personal {
+    padding: 0;
     order: 1;
   }
 
+  .form__person {
+    &--input-zone {
+      flex-direction: row;
+      margin-bottom: 56px;
+
+      label {
+        align-self: center;
+        margin: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form__personal-input {
+    width: 100%;
+    margin-left: 20px;
+  }
+
   .form__devices {
+    padding-top: 0;
+    padding-left: 62px;
+    padding-right: 62px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+    padding-bottom: 54px;
     order: 2;
+
+    legend {
+      padding: 0 25px;
+    }
+
+    label {
+      margin-left: 55px;
+    }
+  }
+
+  .form__device {
+    &--radio-zone {
+      &:first-of-type {
+        margin-top: 47px;
+      }
+    }
+  }
+
+  .form__devices-input {
+    & + label {
+      &::before {
+        bottom: -10px;
+        left: -55px;
+      }
+    }
+
+    &:checked + label {
+      &::after {
+        bottom: -10px;
+        left: -55px;
+      }
+    }
   }
 
   .form__contacts {
     border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 25px;
     order: 3;
+
+    legend {
+      display: inline-block;
+      padding: 0 31px;
+    }
+
+    label {
+      margin-top: 10px;
+      margin-left: 17px;
+      margin-bottom: 0;
+    }
+  }
+
+  .form__contact {
+    &--input-zone {
+      flex-direction: column-reverse;
+
+      &:first-of-type {
+        margin-top: 27px;
+
+        label {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -69px;
+            right: 0;
+            width: 59px;
+            height: 59px;
+            background: url("../img/tel-icon.svg") no-repeat;
+          }
+        }
+      }
+
+      &:last-of-type {
+        margin-top: 30px;
+
+        label {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: -69px;
+            right: 0;
+            width: 59px;
+            height: 59px;
+            background: url("../img/email-icon.svg") no-repeat;
+          }
+        }
+      }
+    }
   }
 
   .form__achievements {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 50px;
     order: 4;
+
+    legend {
+      padding: 0 31px;
+    }
+
+    label {
+      margin-left: 55px;
+    }
+  }
+
+  .form__achievement {
+    &--check-zone {
+      &:first-of-type {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .form__achievements-input {
+    & + label {
+      &::before {
+        bottom: -10px;
+        left: -55px;
+      }
+    }
+
+    &:checked + label {
+      &::after {
+        bottom: -10px;
+        left: -55px;
+      }
+    }
   }
 
   .form__emotions {
     border: 2px solid #e5e5e5;
+    padding-top: 0;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 53px;
     order: 5;
+
+    legend {
+      padding: 0 38px;
+    }
+  }
+
+  .form__textzone {
+    margin-top: 40px;
   }
 
   .form__submitzone {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
     padding: 0;
     order: 6;
+  }
+
+  .form__important-fields {
+    margin: 0;
   }
 }
 
@@ -149,25 +576,132 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 130px;
+
+    fieldset {
+      margin-bottom: 0;
+    }
   }
 
   .form__personal {
     width: 433px;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .form__person {
+    &--input-zone {
+      margin-bottom: 50px;
+    }
   }
 
   .form__devices {
-    width: 431px;
+    width: 433px;
+    height: 290px;
+    margin-left: 70px;
+    margin-right: auto;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .form__device {
+    &--radio-zone {
+      margin-left: 70px;
+      margin-bottom: 39px;
+
+      &:first-of-type {
+        margin-top: 35px;
+      }
+    }
   }
 
   .form__contacts {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 812px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+
+  .form__contact {
+    &--input-zone {
+      width: 371px;
+      margin-top: 25px;
+    }
   }
 
   .form__achievements {
-    width: 100%;
+    width: 812px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 57px;
+  }
+
+  .form__achievements-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: space-between;
+    column-gap: 24px;
+    row-gap: 47px;
+  }
+
+  .form__achievement {
+    &--check-zone {
+      margin-bottom: 0;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      &:nth-of-type(3) {
+        grid-column: 2;
+      }
+
+      &:nth-of-type(4) {
+        grid-column: 2;
+      }
+
+      &:nth-of-type(5) {
+        grid-column: 3;
+        grid-row: 1;
+      }
+
+      &:nth-of-type(6) {
+        grid-column: 3;
+      }
+    }
   }
 
   .form__emotions {
-    width: 100%;
+    width: 812px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 69px;
+    padding-bottom: 45px;
+  }
+
+  .form__textzone {
+    margin-top: 25px;
+  }
+
+  .form__submitzone {
+    width: 940px;
+    margin-top: 69px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
   }
 }

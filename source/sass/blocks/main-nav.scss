@@ -13,6 +13,8 @@
   display: inline-block;
 
   svg {
+    transition: 0.5s;
+
     &:nth-child(2),
     &:nth-child(3) {
       display: none;
@@ -21,6 +23,7 @@
     &:hover,
     &:focus {
       fill: $linkColor;
+      transition: 0.5s;
     }
 
     &:active {
@@ -114,10 +117,12 @@
     align-items: center;
     width: 100%;
     height: 63px;
+    transition: 0.5s;
 
     &:hover,
     &:focus {
       color: $linkColor;
+      transition: 0.5s;
     }
 
     &:active {
@@ -160,6 +165,7 @@
 
 @media (min-width: $desktopWidth) {
   .main-nav {
+    width: 940px;
     display: flex;
     padding: 0 130px;
     margin: 0 auto;

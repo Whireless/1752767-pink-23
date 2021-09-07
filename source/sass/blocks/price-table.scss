@@ -56,18 +56,20 @@
   }
 }
 
-.price-table__body-function--yes {
-  width: 31px;
-  height: 21px;
-  background: url("../img/yes.svg") no-repeat;
-  background-position: 50% 50%;
-}
+.price-table__preferences {
+  &--yes {
+    width: 31px;
+    height: 21px;
+    background: url("../img/yes.svg") no-repeat;
+    background-position: 50% 50%;
+  }
 
-.price-table__body-function--no {
-  width: 27px;
-  height: 27px;
-  background: url("../img/no.svg") no-repeat;
-  background-position: 50% 50%;
+  &--no {
+    width: 27px;
+    height: 27px;
+    background: url("../img/no.svg") no-repeat;
+    background-position: 50% 50%;
+  }
 }
 
 @media (min-width: $tabletWidth) {
