@@ -56,6 +56,10 @@
   }
 }
 
+.price-table__row-title {
+  padding-left: 20px;
+}
+
 .price-table__preferences {
   &--yes {
     width: 31px;
@@ -96,6 +100,10 @@
       height: 45px;
     }
   }
+
+  .price-table__row-title {
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: $desktopWidth) {
@@ -111,11 +119,23 @@
     }
   }
 
+  .price-table__version {
+    font-size: 18px;
+  }
+
+  .price-table__price {
+    font-size: 24px;
+  }
+
   .price-table__body {
     td {
       font-size: 18px;
       width: 231px;
       height: 55px;
     }
+  }
+
+  .price-table__row-title {
+    padding-left: 22px;
   }
 }

@@ -20,16 +20,17 @@
     font-weight: 300;
     color: $linkColor;
     text-decoration: none;
+    transition: 0.5s;
 
     &:hover,
     &:focus {
       color: $textColor;
-      border-bottom: 2px solid $textColor;
+      text-decoration: underline;
+      transition: 0.5s;
     }
 
     &:active {
       color: rgba(40, 54, 69, 0.3);
-      border: none;
     }
   }
 

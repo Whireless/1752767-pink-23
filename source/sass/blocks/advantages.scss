@@ -1,9 +1,10 @@
 .advantages {
+  background: url("../img/white-triangle.svg") no-repeat;
+  background-size: 100%;
   background-color: $bgColor;
-  clip-path: polygon(0 10%, 100% 5%, 100% 100%, 0% 100%);
 
   .container {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 
@@ -26,6 +27,13 @@
     width: 157px;
     height: 320px;
     background: url("../img/mobile/iphone-advant.png") no-repeat;
+    background-position: 50% 37px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/mobile/iphone-advant@2x.png") no-repeat;
+      background-size: 157px 320px;
+      background-position: 50% 37px;
+    }
   }
 }
 
@@ -35,8 +43,8 @@
   h3 {
     font-size: 18px;
     color: #000000;
-    margin-top: 43px;
-    margin-bottom: 24px;
+    margin-top: 38px;
+    margin-bottom: 15px;
   }
 
   p {
@@ -51,6 +59,7 @@
       display: grid;
       grid-template-columns: 268px 310px;
       column-gap: 42px;
+      padding-top: 0;
     }
   }
 
@@ -62,13 +71,19 @@
   .advantages__image {
     &--hello {
       width: 268px;
-      height: 547px;
+      height: 482px;
       background: url("../img/tablet/iphone-advant.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/tablet/iphone-advant@2x.png") no-repeat;
+        background-size: 268px;
+      }
     }
   }
 
   .advantages__zone-info {
     grid-column: 2;
+    margin-top: 15px;
   }
 
   .advantages__block-info {
@@ -76,7 +91,7 @@
     text-align: left;
 
     h3 {
-      margin-top: 46px;
+      margin-top: 40px;
     }
   }
 }
@@ -84,8 +99,10 @@
 @media (min-width: $desktopWidth) {
   .advantages {
     .container {
+      position: relative;
       display: flex;
       flex-direction: column;
+      padding-top: 0;
       padding-bottom: 59px;
     }
   }
@@ -102,6 +119,11 @@
       width: 186px;
       height: 382px;
       background: url("../img/desktop/iphone1.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/desktop/iphone1@2x.png") no-repeat;
+        background-size: 186px;
+      }
     }
 
     &--pink {
@@ -109,27 +131,76 @@
       width: 186px;
       height: 382px;
       background: url("../img/desktop/iphone2.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/desktop/iphone2@2x.png") no-repeat;
+        background-size: 186px;
+      }
     }
 
     &--hello {
       width: 186px;
       height: 382px;
       background: url("../img/desktop/iphone3.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/desktop/iphone3@2x.png") no-repeat;
+        background-size: 186px;
+      }
     }
   }
 
   .advantages__zone-info {
+    width: 940px;
+    position: absolute;
+    top: 300px;
     order: 2;
     display: flex;
     column-gap: 20px;
     background-color: $bgColor;
+    margin-top: 0;
+    z-index: 5;
   }
 
   .advantages__block-info {
+    position: relative;
+    width: 252px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: inherit;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      width: 300px;
+      height: 10px;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+      opacity: 0.3;
+      filter: blur(4px);
+    }
+
+    &--mood {
+      margin-left: 20px;
+    }
+
+    &--world {
+      margin-left: 50px;
+
+      h3 {
+        width: 220px;
+      }
+    }
+
+    &--friends {
+      margin-left: 50px;
+
+      h3 {
+        width: 230px;
+      }
+    }
 
     h3 {
       font-size: 30px;

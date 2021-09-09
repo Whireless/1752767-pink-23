@@ -1,5 +1,28 @@
 .map {
   margin-top: 40px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.map__map-block {
+  position: relative;
+  max-height: 502px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background: url("../img/white-triangle-map.svg") no-repeat;
+    background-position: 50% 0;
+    background-size: 100% 33px;
+    z-index: 3;
+  }
 }
 
 @media (min-width: $tabletWidth) {
@@ -7,8 +30,14 @@
     margin-top: 30px;
 
     img {
-      width: 660px;
       height: 374px;
+    }
+  }
+
+  .map__map-block {
+    &::before {
+      height: 68px;
+      background-size: 100% 68px;
     }
   }
 }
@@ -16,8 +45,14 @@
 @media (min-width: $desktopWidth) {
   .map {
     img {
-      width: 1200px;
       height: 502px;
+    }
+  }
+
+  .map__map-block {
+    &::before {
+      height: 125px;
+      background-size: 100% 125px;
     }
   }
 }
