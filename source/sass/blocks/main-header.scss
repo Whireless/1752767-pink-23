@@ -225,6 +225,10 @@
     background: url("../img/desktop/bg-header.png") no-repeat;
     background-size: cover;
 
+    &--js {
+      padding: 0;
+    }
+
     @media (min-resolution: 2dppx) {
       background: url("../img/desktop/bg-header@2x.png") no-repeat;
       background-size: cover;
@@ -238,6 +242,7 @@
   .main-header__head-text {
     font-size: 50px;
     line-height: 68px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 640px;
   }
@@ -251,7 +256,7 @@
     background: url("../img/desktop/hdr-phone.png") no-repeat;
     background-position: 10% bottom;
     padding: 0 130px;
-    margin-top: 98px;
+    margin-top: 95px;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/desktop/hdr-phone@2x.png") no-repeat;
@@ -261,7 +266,7 @@
   }
 
   .main-header__platform-block {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-right: 640px;
   }
 

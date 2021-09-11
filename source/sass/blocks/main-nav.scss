@@ -165,11 +165,12 @@
 
 @media (min-width: $desktopWidth) {
   .main-nav {
+    position: static;
     width: 940px;
     display: flex;
     padding: 0 130px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
   }
 
   .main-nav__nav-head {
