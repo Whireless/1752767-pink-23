@@ -1,15 +1,7 @@
 .map {
-  margin-top: 40px;
-
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.map__map-block {
   position: relative;
   max-height: 502px;
+  margin-top: 40px;
 
   &::before {
     content: "";
@@ -23,36 +15,37 @@
     background-size: 100% 33px;
     z-index: 3;
   }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (min-width: $tabletWidth) {
   .map {
     margin-top: 30px;
 
-    img {
-      height: 374px;
-    }
-  }
-
-  .map__map-block {
     &::before {
       height: 68px;
       background-size: 100% 68px;
+    }
+
+    img {
+      height: 374px;
     }
   }
 }
 
 @media (min-width: $desktopWidth) {
   .map {
-    img {
-      height: 502px;
-    }
-  }
-
-  .map__map-block {
     &::before {
       height: 125px;
       background-size: 100% 125px;
+    }
+
+    img {
+      height: 502px;
     }
   }
 }
