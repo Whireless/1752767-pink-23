@@ -3,8 +3,8 @@
   background-size: 100%;
   background-color: $bgColor;
 
-  .container {
-    padding-top: 40px;
+  &--container {
+    padding-top: 50px;
   }
 }
 
@@ -43,19 +43,34 @@
   h3 {
     font-size: 18px;
     color: #000000;
-    margin-top: 38px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   p {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  &--mood {
+    h3 {
+      margin-top: 37px;
+    }
+  }
+
+  &--world {
+    h3 {
+      margin-top: 35px;
+    }
+  }
+
+  &--friends {
+    margin-top: 31px;
+  }
 }
 
 @media (min-width: $tabletWidth) {
   .advantages {
-    .container {
+    &--container {
       display: grid;
       grid-template-columns: 268px 310px;
       column-gap: 42px;
@@ -90,15 +105,23 @@
     width: 310px;
     text-align: left;
 
-    h3 {
-      margin-top: 40px;
+    &--mood {
+      h3 {
+        margin-top: 56px;
+      }
+    }
+
+    &--world {
+      p {
+        width: 300px;
+      }
     }
   }
 }
 
 @media (min-width: $desktopWidth) {
   .advantages {
-    .container {
+    &--container {
       position: relative;
       display: flex;
       flex-direction: column;
@@ -169,6 +192,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: inherit;
 
     &::before {
@@ -183,7 +207,7 @@
     }
 
     &--mood {
-      margin-left: 20px;
+      margin-left: 23px;
     }
 
     &--world {
@@ -195,6 +219,7 @@
     }
 
     &--friends {
+      margin-top: 0;
       margin-left: 50px;
 
       h3 {
@@ -206,12 +231,14 @@
       font-size: 30px;
       line-height: 30px;
       text-align: center;
+      margin-top: 55px;
+      margin-bottom: 24px;
     }
 
     p {
       font-size: 18px;
       line-height: 30px;
-      width: 252px;
+      width: 249px;
       text-align: center;
     }
   }

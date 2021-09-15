@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: 320px;
   overflow: hidden;
-  padding: 85px 20px 45px 20px;
+  padding: 99px 20px 29px 20px;
   margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@
   column-gap: 19px;
   list-style: none;
   margin: 0;
-  padding: 0 0 49px 0;
+  padding: 0 0 44px 0;
 }
 
 .price__slider-button {
@@ -32,14 +32,14 @@
 
   &--active {
     background-color: #ffffff;
-    box-shadow: 0 0 0 2px #283645;
+    box-shadow: 0 0 0 3px #283645;
   }
 }
 
 @media (min-width: $tabletWidth) {
   .price__table-content {
     width: 660px;
-    padding: 100px 20px 70px 20px;
+    padding: 104px 20px 70px 20px;
   }
 
   .price__slider-list {
@@ -50,6 +50,6 @@
 @media (min-width: $desktopWidth) {
   .price__table-content {
     width: 1200px;
-    padding: 140px 130px 98px 130px;
+    padding: 152px 130px 98px 130px;
   }
 }

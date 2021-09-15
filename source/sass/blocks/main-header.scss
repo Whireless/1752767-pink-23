@@ -42,8 +42,8 @@
   font-weight: 300;
   text-align: center;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 84px;
+  padding-top: 22px;
+  padding-bottom: 78px;
 }
 
 .main-header__form-preview {
@@ -52,7 +52,7 @@
   font-weight: 300;
   text-align: center;
   margin: 0;
-  padding: 36px 20px 51px 20px;
+  padding: 23px 20px 44px 20px;
 }
 
 .main-header__head-info {
@@ -63,7 +63,7 @@
   background: url("../img/mobile/hdr-phone.png") no-repeat;
   background-position: 0 100px;
   background-color: rgba(29, 38, 49, 0);
-  padding: 25px 20px 38px 20px;
+  padding: 20px 20px 38px 20px;
   margin: 0 auto;
 
   @media (min-resolution: 2dppx) {
@@ -90,9 +90,11 @@
   align-items: center;
   justify-content: center;
   width: 280px;
-  height: 55px;
+  height: 49px;
   border: 3px solid #ffffff;
   border-radius: 29px;
+  margin-top: 20px;
+  padding: 0;
   transition: 0.5s;
 
   &:hover,
@@ -147,7 +149,7 @@
 .main-header__platform-info {
   font-weight: 300;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 22px;
   margin-bottom: 0;
 }
 
@@ -167,20 +169,22 @@
     font-size: 40px;
     line-height: 48px;
     width: 245px;
-    margin: 15px auto 0 35px;
+    margin: 58px auto 0 28px;
   }
 
   .main-header__catalog-preview {
     width: 358px;
     font-size: 50px;
     line-height: 68px;
-    padding-top: 100px;
+    padding-top: 104px;
+    padding-bottom: 129px;
   }
 
   .main-header__form-preview {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 115px;
+    padding-top: 105px;
+    padding-bottom: 60px;
   }
 
   .main-header__head-info {
@@ -199,7 +203,7 @@
   }
 
   .main-header__platform-block {
-    margin-top: 39px;
+    margin-top: 10px;
     margin-right: auto;
     padding-top: 0;
     padding-bottom: 0;
@@ -217,6 +221,7 @@
   .main-header__platform-info {
     font-size: 18px;
     width: 300px;
+    margin-top: 33px;
   }
 }
 
@@ -251,12 +256,17 @@
     padding: 95px 130px 104px 130px;
   }
 
+  .main-header__catalog-preview {
+    padding-top: 58px;
+    padding-bottom: 90px;
+  }
+
   .main-header__head-info {
     height: 645px;
     background: url("../img/desktop/hdr-phone.png") no-repeat;
     background-position: 10% bottom;
     padding: 0 130px;
-    margin-top: 95px;
+    margin-top: 98px;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/desktop/hdr-phone@2x.png") no-repeat;
@@ -266,16 +276,17 @@
   }
 
   .main-header__platform-block {
-    margin-top: 30px;
+    margin-top: 37px;
     margin-right: 640px;
   }
 
   .main-header__button-download {
     font-size: 21px;
+    margin-top: 0;
   }
 
   .main-header__platform-list {
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
   .main-header__platform-info {

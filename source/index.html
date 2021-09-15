@@ -42,7 +42,7 @@
         <button class="main-nav__button-menu" type="button" aria-label="Меню сайта"></button>
       </div>
         <ul class="main-nav__nav-list">
-          <li class="main-nav__nav-item index-page"><a href="#">Главная</a></li>
+          <li class="main-nav__nav-item main-nav__nav-item--index-page"><a href="#">Главная</a></li>
           <li class="main-nav__nav-item"><a href="catalog.html">Фотографии</a></li>
           <li class="main-nav__nav-item"><a href="form.html">Конкурс</a></li>
           <li class="main-nav__nav-item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
@@ -65,12 +65,15 @@
     <main class="main-content">
       <div class="intro-info">
       <div class="container">
-        <p class="intro-info__intro-text">Устали от серости мегаполиса?<br>Нам есть, что вам<br> предложить!</p>
+        <p class="intro-info__intro-text">Устали от серости мегаполиса?
+          <span>Нам есть, что вам<br> предложить!</span>
+        </p>
       </div>
     </div>
       <section class="advantages">
       <div class="container">
         <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+        <div class="advantages--container">
         <div class="advantages__zone-info">
         <div class="advantages__block-info advantages__block-info--mood">
           <h3>Поднимает настроение</h3>
@@ -90,18 +93,21 @@
         <div class="advantages__image advantages__image--pink"></div>
         <div class="advantages__image advantages__image--hello"></div>
         </div>
+        </div>
       </div>
       </section>
       <section class="effects">
         <div class="container">
+          <div class="effects--container">
           <div class="effects__effects-image"></div>
           <div class="effects__effects-info">
-            <h3>Эффект на 24 часа!</h3>
+            <h3>Эффект <span class="effects__head-break">на 24 часа!</span></h3>
             <p>Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится целые сутки!</p>
+              и доказали,<span class="effects__text-break">что положительный эффект<br>
+              от использования приложения длится целые сутки!</span></p>
             <p class="effects__effects-link"><a href="#">Узнать больше об исследовании</a></p>
           </div>
+        </div>
         </div>
       </section>
       <section class="reviews slider">
@@ -198,6 +204,7 @@
     </main>
     <footer class="main-footer">
     <div class="container">
+      <div class="main-footer--container">
         <a class="main-footer__footer-logo" href="#"></a>
         <ul class="main-footer__social-list">
           <li class="main-footer__social-item main-footer__social-item--twitter"><a href="https://twitter.com/" aria-label="Мы в Твиттере"></a></li>
@@ -212,6 +219,7 @@
             </svg>
           </a>
         </div>
+      </div>
     </div>
     </footer>
     <script src="js/main-menu.min.js"></script>

@@ -6,7 +6,7 @@
   .effects {
     display: block;
 
-    .container {
+    &--container {
       display: grid;
       grid-template-columns: 238px 310px;
       column-gap: 72px;
@@ -24,20 +24,31 @@
     h3 {
       font-size: 30px;
       line-height: 36px;
-      width: 168px;
-      margin-top: 102px;
+      margin-top: 94px;
       margin-bottom: 0;
       text-align: left;
+      color: #000000;
     }
 
     p {
+      width: 300px;
       font-weight: 400;
-      margin-top: 24px;
       margin-bottom: 0;
+
+      &:first-of-type {
+        margin-top: 11px;
+      }
     }
   }
 
+  .effects__head-break {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .effects__effects-link {
+    margin-top: 11px;
+
     a {
       color: $linkColor;
     }
@@ -48,7 +59,7 @@
   .effects {
     background: $bgColor;
 
-    .container {
+    &--container {
       display: grid;
       grid-template-columns: 298px 534px;
       padding-top: 150px;
@@ -57,7 +68,7 @@
   }
 
   .effects__effects-image {
-    margin-top: 17px;
+    margin-top: 36px;
     width: 298px;
     height: 345px;
     background-size: contain;
@@ -65,14 +76,35 @@
 
   .effects__effects-info {
     h3 {
-      width: 298px;
       line-height: 30px;
+      margin-top: 130px;
     }
 
     p {
       width: 534px;
       font-size: 18px;
       line-height: 30px;
+
+      &:first-of-type {
+        margin-top: 26px;
+      }
     }
+
+    br {
+      display: none;
+    }
+  }
+
+  .effects__head-break {
+    display: inline;
+  }
+
+  .effects__text-break {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .effects__effects-link {
+    margin-top: 30px;
   }
 }
