@@ -5,7 +5,7 @@
 .main-nav__nav-head {
   display: flex;
   justify-content: space-between;
-  padding: 20px 21px 20px 21px;
+  padding: 20px 21px 16px 21px;
   border-bottom: 1px solid #000000;
 }
 
@@ -146,16 +146,15 @@
   }
 
   .main-nav__button-menu {
-    top: 33px;
-    right: 20px;
+    top: 22px;
   }
 
   .main-nav__nav-head {
-    padding: 40px 20px 40px 20px;
+    padding: 30px 20px;
   }
 }
 
-@media (max-width: $desktopWidth) {
+@media (max-width: 1199px) {
   .main-nav--close {
     .main-nav__nav-list {
       display: none;
@@ -174,7 +173,7 @@
   }
 
   .main-nav__nav-head {
-    padding: 27px 0 43px 0;
+    padding: 27px 0 36px 0;
     border: none;
   }
 
@@ -211,21 +210,23 @@
     border: none;
 
     a {
+      height: 40px;
+
       &:active {
         color: rgba(255, 255, 255, 0.3);
       }
     }
-  }
 
-  .index-page {
-    border-bottom: 2px solid #ffffff;
-  }
+    &--index-page {
+      border-bottom: 2px solid #ffffff;
+    }
 
-  .catalog-page {
-    border-bottom: 2px solid #ffffff;
-  }
+    &--catalog-page {
+      border-bottom: 2px solid #ffffff;
+    }
 
-  .form-page {
-    border-bottom: 2px solid #ffffff;
+    &--form-page {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .map {
   position: relative;
   max-height: 502px;
-  margin-top: 40px;
+  margin-top: 35px;
 
   &::before {
     content: "";
@@ -24,7 +24,7 @@
 
 @media (min-width: $tabletWidth) {
   .map {
-    margin-top: 30px;
+    margin-top: 22px;
 
     &::before {
       height: 68px;
@@ -40,8 +40,8 @@
 @media (min-width: $desktopWidth) {
   .map {
     &::before {
-      height: 125px;
-      background-size: 100% 125px;
+      height: 124px;
+      background-size: 100% 124px;
     }
 
     img {
