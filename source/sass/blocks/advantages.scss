@@ -2,10 +2,10 @@
   background: url("../img/white-triangle.svg") no-repeat;
   background-size: 100%;
   background-color: $bgColor;
+}
 
-  &--container {
-    padding-top: 50px;
-  }
+.advantages__content {
+  padding-top: 50px;
 }
 
 .advantages__image-block {
@@ -15,6 +15,8 @@
 }
 
 .advantages__image {
+  display: block;
+
   &--grey {
     display: none;
   }
@@ -24,16 +26,7 @@
   }
 
   &--hello {
-    width: 157px;
-    height: 320px;
-    background: url("../img/mobile/iphone-advant.png") no-repeat;
-    background-position: 50% 37px;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../img/mobile/iphone-advant@2x.png") no-repeat;
-      background-size: 157px 320px;
-      background-position: 50% 37px;
-    }
+    object-position: 50% 37px;
   }
 }
 
@@ -69,13 +62,11 @@
 }
 
 @media (min-width: $tabletWidth) {
-  .advantages {
-    &--container {
-      display: grid;
-      grid-template-columns: 268px 310px;
-      column-gap: 42px;
-      padding-top: 0;
-    }
+  .advantages__content {
+    display: grid;
+    grid-template-columns: 268px 310px;
+    column-gap: 42px;
+    padding-top: 0;
   }
 
   .advantages__image-block {
@@ -87,12 +78,8 @@
     &--hello {
       width: 268px;
       height: 482px;
-      background: url("../img/tablet/iphone-advant.png") no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background: url("../img/tablet/iphone-advant@2x.png") no-repeat;
-        background-size: 268px;
-      }
+      object-fit: cover;
+      object-position: 50% 0%;
     }
   }
 
@@ -120,14 +107,12 @@
 }
 
 @media (min-width: $desktopWidth) {
-  .advantages {
-    &--container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      padding-top: 0;
-      padding-bottom: 59px;
-    }
+  .advantages__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 59px;
   }
 
   .advantages__image-block {
@@ -139,37 +124,15 @@
   .advantages__image {
     &--grey {
       display: block;
-      width: 186px;
-      height: 382px;
-      background: url("../img/desktop/iphone1.png") no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background: url("../img/desktop/iphone1@2x.png") no-repeat;
-        background-size: 186px;
-      }
     }
 
     &--pink {
       display: block;
-      width: 186px;
-      height: 382px;
-      background: url("../img/desktop/iphone2.png") no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background: url("../img/desktop/iphone2@2x.png") no-repeat;
-        background-size: 186px;
-      }
     }
 
     &--hello {
       width: 186px;
       height: 382px;
-      background: url("../img/desktop/iphone3.png") no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background: url("../img/desktop/iphone3@2x.png") no-repeat;
-        background-size: 186px;
-      }
     }
   }
 
