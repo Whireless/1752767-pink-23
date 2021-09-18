@@ -5,12 +5,12 @@
 @media (min-width: $tabletWidth) {
   .effects {
     display: block;
+  }
 
-    &--container {
-      display: grid;
-      grid-template-columns: 238px 310px;
-      column-gap: 72px;
-    }
+  .effects__content {
+    display: grid;
+    grid-template-columns: 238px 310px;
+    column-gap: 72px;
   }
 
   .effects__effects-image {
@@ -58,13 +58,13 @@
 @media (min-width: $desktopWidth) {
   .effects {
     background: $bgColor;
+  }
 
-    &--container {
-      display: grid;
-      grid-template-columns: 298px 534px;
-      padding-top: 150px;
-      padding-bottom: 67px;
-    }
+  .effects__content {
+    display: grid;
+    grid-template-columns: 298px 534px;
+    padding-top: 150px;
+    padding-bottom: 67px;
   }
 
   .effects__effects-image {
