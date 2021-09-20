@@ -1,6 +1,7 @@
 .main-header {
   color: #ffffff;
-  background: url("../img/mobile/bg-header.png") no-repeat;
+  background-image: url("../img/mobile/bg-header.png");
+  background-repeat: no-repeat;
   background-position: 50% 257px;
   background-color: $specColor;
   background-size: 660px 460px;
@@ -11,7 +12,8 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/mobile/bg-header@2x.png") no-repeat;
+    background-image: url("../img/mobile/bg-header@2x.png");
+    background-repeat: no-repeat;
     background-size: 660px 460px;
     background-color: $specColor;
   }
@@ -155,12 +157,15 @@
 
 @media (min-width: $tabletWidth) {
   .main-header {
-    background: url("../img/tablet/bg-header.png") no-repeat;
-    background-color: rgba(29, 38, 49, 0);
+    background-image: url("../img/tablet/bg-header.png");
+    background-repeat: no-repeat;
+    background-color: $specColor;
     background-size: 1200px 728px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/tablet/bg-header@2x.png") no-repeat;
+      background-image: url("../img/tablet/bg-header@2x.png");
+      background-repeat: no-repeat;
+      background-color: $specColor;
       background-size: 1200px 728px;
     }
   }
@@ -227,7 +232,9 @@
 
 @media (min-width: $desktopWidth) {
   .main-header {
-    background: url("../img/desktop/bg-header.png") no-repeat;
+    background-image: url("../img/desktop/bg-header.png");
+    background-repeat: no-repeat;
+    background-color: $specColor;
     background-size: cover;
 
     &--js {
@@ -235,7 +242,9 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/desktop/bg-header@2x.png") no-repeat;
+      background-image: url("../img/desktop/bg-header@2x.png");
+      background-repeat: no-repeat;
+      background-color: $specColor;
       background-size: cover;
     }
   }
