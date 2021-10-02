@@ -28,7 +28,6 @@ const styles = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-
 exports.styles = styles;
 
 // HTML
@@ -38,7 +37,6 @@ const html = () => {
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 }
-
 exports.html = html;
 
 // Scripts
@@ -49,7 +47,6 @@ const script = () => {
     .pipe(rename("main-menu.min.js"))
     .pipe(gulp.dest("build/js"))
 }
-
 exports.script = script;
 
 // Images
@@ -59,14 +56,12 @@ const optimizeImages = () => {
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"))
 }
-
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,svg}")
     .pipe(gulp.dest("build/img"))
 }
-
 exports.copyImages = copyImages;
 
 // Copy
@@ -81,7 +76,6 @@ const copy = (done) => {
     .pipe(gulp.dest("build"))
   done();
 }
-
 exports.copy = copy;
 
 // Clean
@@ -89,7 +83,6 @@ exports.copy = copy;
 const clean = () => {
   return del("build");
 }
-
 exports.clean = clean;
 
 // Server
@@ -105,7 +98,6 @@ const server = (done) => {
   });
   done();
 }
-
 exports.server = server;
 
 // Reload
@@ -135,7 +127,6 @@ const build = gulp.series(
     script
   )
 );
-
 exports.build = build;
 
 // Default
